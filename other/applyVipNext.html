@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>申请会员</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/other.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+</head>
+<body>
+
+<section class="apply applyNext">
+    <div class="in">
+        <div class="inpCom">
+            <div class="inp">
+                <input type="text" placeholder="请填写店铺名称">
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="请填写店铺地址">
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="请填写店铺名称">
+            </div>
+            <div class="inp">
+                <div class="brand">
+                    <select>
+                        <option value="">请选择代理品牌</option>
+                        <option value="">Dulux/多乐士</option>
+                        <option value="">SKSHU/三棵树</option>
+                        <option value="">CARPOLY/嘉宝莉</option>
+                        <option value="">美涂士</option>
+                        <option value="">MASTER’S MARK/大师</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inp inp3">
+                <div class="ti">营业执照<p>（少于3张）</p></div>
+                <div class="tr">
+                    <div class="addPic" id="yyTp">
+                        <ul >
+                            <li>
+                                 <span class="tp">
+                                     <img src="../images/img-oth/yyzz.jpg"  alt="">
+                                 </span>
+                                <i class="del">X</i>
+                            </li>
+                            <li>
+                                 <span class="tp">
+                                     <img src="../images/img-oth/yyzz.jpg"  alt="">
+                                 </span>
+                                <i class="del">X</i>
+                            </li>
+                        </ul>
+                        <div class="upBtn fl">
+                            <input type="file" accept="image/*" id="yyBtn" multiple="">
+                            <label for="yyBtn"></label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="inp inp3 inp4">
+                <div class="ti">店铺照片<p>（少于6张）</p></div>
+                <div class="tr">
+                    <div class="addPic" id="shopTp">
+                        <ul >
+                            <li>
+                                 <span class="tp">
+                                     <img src="../images/img-pro/ban01.png"  alt="">
+                                 </span>
+                                <i class="del">X</i>
+                            </li>
+                            <li>
+                                 <span class="tp">
+                                     <img src="../images/img-pro/ban02.png"  alt="">
+                                 </span>
+                                <i class="del">X</i>
+                            </li>
+                            <li>
+                                 <span class="tp">
+                                    <img src="../images/img-pro/ban03.png"  alt="">
+                                 </span>
+                                <i class="del">X</i>
+                            </li>
+                            <li>
+                                 <span class="tp">
+                                     <img src="../images/img-pro/ban01.png"  alt="">
+                                 </span>
+                                <i class="del">X</i>
+                            </li>
+                            <li>
+                                 <span class="tp">
+                                     <img src="../images/img-pro/ban02.png"  alt="">
+                                 </span>
+                                <i class="del">X</i>
+                            </li>
+                        </ul>
+                        <div class="upBtn fl">
+                            <input type="file" accept="image/*" id="shopBtn" multiple="">
+                            <label for="shopBtn"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="applySuc.html">下一步</a>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    /*营业执照*/
+    $("#yyBtn").change(function() {
+        var $file = $(this);
+        var fileObj = $file[0];
+        var windowURL = window.URL || window.webkitURL;
+        var dataURL;
+        //获取 呈现图片位置
+        var ImgDom=$file.parents("#yyTp").find("ul");
+        //图片的数量
+        var Imglength=fileObj.files.length;
+        for(var i=0;i<Imglength;i++){
+            dataURL = windowURL.createObjectURL(fileObj.files[i]);
+            var _html='<li>'+
+                    '<span class="tp">'+
+                    '<img src="'+dataURL+'" >'+
+                    '</span>'+
+                    '<i class="del" onclick="delImg($(this));">X</i>'+'</li>'
+            ImgDom.append(_html);
+        }
+    });
+    //删除图片
+    function delImg(self){
+        self.parents("li").remove();
+    }
+</script>
+<script type="text/javascript">
+    /*店铺照片*/
+    $("#shopBtn").change(function() {
+        var $file = $(this);
+        var fileObj = $file[0];
+        var windowURL = window.URL || window.webkitURL;
+        var dataURL;
+        //获取 呈现图片位置
+        var ImgDom=$file.parents("#shopTp").find("ul");
+        //图片的数量
+        var Imglength=fileObj.files.length;
+        for(var i=0;i<Imglength;i++){
+            dataURL = windowURL.createObjectURL(fileObj.files[i]);
+            var _html='<li>'+
+                    '<span class="tp">'+
+                    '<img src="'+dataURL+'" >'+
+                    '</span>'+
+                    '<i class="del" onclick="delImg($(this));">X</i>'+'</li>'
+            ImgDom.append(_html);
+        }
+    });
+    //删除图片
+    function delImg(self){
+        self.parents("li").remove();
+    }
+</script>
+
+</body>
+</html>

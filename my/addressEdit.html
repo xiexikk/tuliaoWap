@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>收货地址编辑</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/my.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/com.js"></script>
+    <script src="../js/my.js"></script>
+</head>
+<body>
+
+<header class="comHd">
+    <div class="in">
+        <div class="hdTit">
+            <a href="javascript:history.back(-1)" class="backIco"></a>
+            <h2>收货地址编辑</h2>
+        </div>
+    </div>
+</header>
+
+<section class="addCom">
+    <div class="in">
+        <form action="" method="">
+            <div class="inp">
+                <span class="ti">姓名</span>
+                <input type="text" placeholder="请输入收货人姓名">
+            </div>
+            <div class="inp">
+                <span class="ti">联系电话</span>
+                <input type="text" placeholder="请输入收货人电话">
+            </div>
+            <div class="inp">
+                <i class="jt ver_center"></i>
+                <span class="ti">收货地址</span>
+                <div class="content-block">
+                    <div id="addAddress">
+                        <div class="address_input">
+                            <input class="address_input1" type="text" placeholder="请选择省市区" id="shengshi" onClick="getProvinceBuy()" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inp inp2">
+                <textarea placeholder="请输入详细地址"></textarea>
+            </div>
+            <div class="setDef">
+                <i></i>
+                <span>设为默认地址</span>
+            </div>
+            <div class="btnCom">
+                <a href="javascript:;">保存</a>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script src="../js/city.js"></script>
+<script src="../js/area.js"></script>
+<script>
+    $(function(){
+        $('.setDef i').on('tap',function(){
+            $(this).parent().toggleClass('cur');
+        })
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/my.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/com.js"></script>
+    <script src="../js/my.js"></script>
+</head>
+<body>
+
+<header class="comHd">
+    <div class="in">
+        <div class="hdTit">
+            <a href="javascript:history.back(-1)" class="backIco"></a>
+            <h2>订单详情</h2>
+        </div>
+    </div>
+</header>
+
+<section class="ordDet ordDet2">
+    <div class="in">
+        <div class="itemCom item01">
+            <div class="hd">收货人信息</div>
+            <div class="inf">
+                <div class="dd">
+                    <span class="name fl">麦兜兜</span>
+                    <span class="tel fr">12345678910</span>
+                </div>
+                <p>广东省广州市天河区五山街汇景新城c座503号</p>
+            </div>
+        </div>
+        <div class="itemCom item02">
+            <div class="hd">订单信息</div>
+            <div class="inf">
+                <ul>
+                    <li class="sta">
+                        <span class="ti">订单状态</span>
+                        <span class="tr">待收货</span>
+                    </li>
+                    <li>
+                        <span class="ti">订单编号</span>
+                        <span class="tr">123456789001258</span>
+                    </li>
+                    <li>
+                        <span class="ti">下单时间</span>
+                        <span class="tr">2016-08-19  15：54</span>
+                    </li>
+                    <li>
+                        <span class="ti">发货地址</span>
+                        <p class="tr">广东省广州市天河区珠江新城华夏路雅居乐18楼</p>
+                    </li>
+                    <li>
+                        <span class="ti">物流单号</span>
+                        <span class="tr">申通快递：8888778455</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="itemCom item03 ordList">
+            <div class="hd">商品信息</div>
+            <div class="proDd">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <a href="#">
+                                <div class="tp">
+                                    <img src="../images/img-pro/goods01.png" alt="商品">
+                                </div>
+                                <div class="txt">
+                                    <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                    <p class="type">型号：40kg</p>
+                                    <p class="bot">
+                                        <span class="nu fl">×1</span>
+                                        <span class="pri fr">￥200.00</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="status">
+                            <div class="money">
+                                <div class="mm">
+                                    <span>共计（含运费<em>￥10</em>）</span>
+                                    <em class="price">￥210.00</em>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <a href="#">
+                                <div class="tp">
+                                    <img src="../images/img-pro/goods01.png" alt="商品">
+                                </div>
+                                <div class="txt">
+                                    <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                    <p class="type">型号：40kg</p>
+                                    <p class="bot">
+                                        <span class="nu fl">×1</span>
+                                        <span class="pri fr">￥200.00</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="status">
+                            <div class="money">
+                                <div class="mm">
+                                    <span>共计（含运费<em>￥10</em>）</span>
+                                    <em class="price">￥210.00</em>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="javascript:;">确认收货</a>
+        </div>
+        <div class="btn" id="qthBtn">
+            <a href="javascript:;">请退货</a>
+        </div>
+        <div class="btn btn3" id="applyThBtn">
+            <a href="javascript:;">申请退货</a>
+        </div>
+    </div>
+</section>
+
+<!--申请退货-->
+<div class="thPop" id="thPop01">
+    <div class="in center">
+        <div class="hdTit">申请退货</div>
+        <div class="reason">
+            <p class="ti">*退货原因</p>
+            <textarea name="" placeholder=""></textarea>
+        </div>
+        <div class="upLoad">
+            <p class="ti">上传凭证（最多4张）</p>
+            <div class="pic">
+                <div class="addPicBtn">
+                    <input type="file" accept="image/*" multiple="" id="upLoadPic">
+                    <label for="upLoadPic"></label>
+                </div>
+                <ul class="myTp">
+                </ul>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="button" class="keep">保存</button>
+            <button type="button" class="cancle">取消</button>
+        </div>
+    </div>
+</div>
+<!--请退货-->
+<div class="thPop" id="thPop02">
+    <div class="in center">
+        <div class="hdTit">请退货</div>
+        <div class="tip">请正确填写退货信息</div>
+        <div class="inp">
+            <p class="ti"><em>*</em>物流订单号</p>
+            <input type="text" class="" placeholder="">
+        </div>
+        <div class="inp">
+            <p class="ti"><em>*</em>物流公司</p>
+            <input type="text" class="" placeholder="">
+        </div>
+        <div class="btn">
+            <button type="button" class="keep">保存</button>
+            <button type="button" class="cancle">取消</button>
+        </div>
+    </div>
+</div>
+
+<!-- 退货弹窗显示与隐藏 -->
+<script>
+    $(function(){
+        function fadeTo(btn,wrap,cancle){
+            $(wrap).hide();
+            $(btn).click(function(event) {
+                $(wrap).fadeIn(200);
+            });
+            $(cancle).click(function(event) {
+                $(wrap).fadeOut(200);
+            });
+        }
+        fadeTo('#applyThBtn','#thPop01','#thPop01 .cancle');
+        fadeTo('#qthBtn','#thPop02','#thPop02 .cancle');
+    });
+</script>
+<!-- 上传凭证照片-->
+<script type="text/javascript">
+    $(function() {
+        $("#upLoadPic").change(function() {
+            var $file = $(this);
+            var fileObj = $file[0];
+            var windowURL = window.URL || window.webkitURL;
+            var dataURL;
+            //获取 呈现图片位置
+            var ImgDom=$file.parents(".upLoad .pic").find("ul");
+            //图片的数量
+            var Imglength=fileObj.files.length;
+            for(var i=0;i<Imglength;i++){
+                dataURL = windowURL.createObjectURL(fileObj.files[i]);
+                var _html='<li>'+
+                        '<span class="tp">'+
+                        '<img src="'+dataURL+'" >'+
+                        '</span>'+
+                        '<i class="del" onclick="delImg($(this));"></i>'
+                ImgDom.append(_html);
+            }
+        });
+    });
+    //删除图片
+    function delImg(self){
+        self.parents("ul.myTp li").remove();
+    }
+</script>
+
+</body>
+</html>

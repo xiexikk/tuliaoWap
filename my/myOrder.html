@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/my.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/com.js"></script>
+    <script src="../js/my.js"></script>
+</head>
+<body>
+
+<section class="myOrd">
+    <div class="in">
+        <ol>
+            <li class="cur"><span>全部</span></li>
+            <li><span>待付款</span></li>
+            <li><span>待发货</span></li>
+            <li class="have"><span>待收货</span></li>
+            <li><span>已完成</span></li>
+        </ol>
+    </div>
+</section>
+
+<section class="ordList">
+    <div class="con">
+        <section class="proDd">
+            <!--全部-->
+            <ul>
+                <li class="dfk">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥180.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥190.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">待付款</span>
+                            <div class="han fr">
+                                <a href="payment.html" class="payBtn">马上付款</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dfh">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×2</span>
+                                    <span class="pri fr">￥100.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥210.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">待发货</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="javascript:;" class="txBtn">提醒发货</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dsh">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥200.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥210.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">待收货</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="receipt.html" class="shBtn">确认收货</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ywc wpj">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥300.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥310.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">已完成</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="evaluate.html" class="pjBtn">立即评价</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ywc ypj">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥300.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥310.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">已完成</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="#" class="ypjBtn">已评价</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--待付款-->
+            <ul>
+                <li class="dfk">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥180.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥190.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">待付款</span>
+                            <div class="han fr">
+                                <a href="payment.html" class="payBtn">马上付款</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--待发货-->
+            <ul>
+                <li class="dfh">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×2</span>
+                                    <span class="pri fr">￥100.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥210.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">待发货</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="javascript:;" class="txBtn">提醒发货</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dfh">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×2</span>
+                                    <span class="pri fr">￥100.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥210.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">待发货</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="javascript:;" class="txBtn">提醒发货</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--待收货-->
+            <ul>
+                <li class="dsh">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥200.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥210.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">待收货</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="receipt.html" class="shBtn">确认收货</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dsh">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥200.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥210.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">待收货</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="receipt.html" class="shBtn">确认收货</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--已完成-->
+            <ul>
+                <li class="ywc">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥300.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥310.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">已完成</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="evaluate.html" class="pjBtn">立即评价</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ywc">
+                    <div class="item">
+                        <a href="../product/proDet.html">
+                            <div class="tp">
+                                <img src="../images/img-pro/goods01.png" alt="商品">
+                            </div>
+                            <div class="txt">
+                                <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                                <p class="type">型号：40kg</p>
+                                <p class="bot">
+                                    <span class="nu fl">×1</span>
+                                    <span class="pri fr">￥300.00</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div  class="status">
+                        <div class="money">
+                            <div class="mm">
+                                <span>共计（含运费<em>￥10</em>）</span>
+                                <em class="price">￥310.00</em>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <span class="ti fl">已完成</span>
+                            <div class="han fr">
+                                <a href="#" class="zlBtn">再来一单</a>
+                                <a href="#" class="ypjBtn">已评价</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</section>
+
+</body>
+</html>

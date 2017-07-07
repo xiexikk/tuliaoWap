@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>确认付款</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/my.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/com.js"></script>
+    <script src="../js/my.js"></script>
+</head>
+<body>
+
+<header class="comHd">
+    <div class="in">
+        <div class="hdTit">
+            <a href="javascript:history.back(-1)" class="backIco"></a>
+            <h2>确认付款</h2>
+        </div>
+    </div>
+</header>
+
+<section class="payment">
+    <div class="in">
+        <div class="com">
+            <h3>商品信息</h3>
+            <ul class="list">
+                <li>
+                    <p>环保型熟胶粉产品特点白色金色 大批量40kg系列</p>
+                    <span class="pri">￥200.00</span>
+                </li>
+                <li>
+                    <p>环保型熟胶粉产品特点白色金色 大批量40kg系列</p>
+                    <span class="pri">￥200.00</span>
+                </li>
+            </ul>
+            <div class="count">
+                <span>共计（含运费<em>10</em>元）</span>
+                <span class="money">￥410.00</span>
+            </div>
+        </div>
+        <div class="com">
+            <h3>支付方式</h3>
+            <ul class="type">
+                <li>
+                    <span class="tp">
+                        <img src="../images/img-oth/zf03.png" alt="">
+                    </span>
+                    <span class="tx">微信钱包</span>
+                    <i class="che ver_center"></i>
+                </li>
+                <li>
+                    <span class="tp">
+                        <img src="../images/img-oth/zf02.png" alt="">
+                    </span>
+                    <span class="tx">银联支付</span>
+                    <i class="che ver_center"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="btn">
+        <a href="paySuccess.html">确认付款<em>￥410.00</em></a>
+    </div>
+</section>
+
+<script>
+    $(function(){
+        $('.payment .type .che').on('tap',function(){
+            $(this).addClass('cur');
+            $(this).parent().siblings().find('.che').removeClass('cur');
+        })
+    })
+</script>
+
+</body>
+</html>

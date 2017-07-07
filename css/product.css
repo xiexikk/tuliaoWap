@@ -1,0 +1,250 @@
+/*index.html*/
+.banner .slideBox{ position:relative;}
+.banner .slideBox .hd{ position:absolute; bottom:0.2rem; z-index:1; }
+.banner .slideBox .hd li{ display:inline-block; width:0.14rem; height:0.14rem; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; border-radius:50%; background-color:#fff; box-shadow: 0 0 0.08rem #838383;  text-indent:-99999px; overflow:hidden; margin:0 0.1rem; }
+.banner .slideBox .hd li.on{ background-color:#d5162a;}
+.banner .slideBox .bd{ position:relative; z-index:0; }
+.banner .slideBox .bd li{ position:relative; text-align:center; }
+.banner .slideBox .bd li img{ width:100%;}
+.banner .slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0); display:block;}
+.banner .serCom{ width: 100%; height: 1.1rem; padding: 0.2rem 0; overflow: hidden; box-sizing: border-box; position: absolute; top: 0; z-index: 88; max-width: 640px; min-width: 320px; margin: 0 auto;
+    background-color: transparent; transition:background-color 1.5s;-webkit-transition:background-color 1.5s;-moz-transition:background-color 1.5s;-ms-transition:background-color 1.5s;transform: translateZ(0);}
+.banner .serCom.show{ background-color:#d5162a; position: fixed; }
+.banner .ser{ width: 94%; box-sizing: border-box; background-color: #fff;border-radius: 0.08rem; margin: 0 auto;}
+.banner .ser input{ width: 100%; height: 0.7rem; line-height: 0.7rem; font-size: 0.28rem; padding: 0 0.6rem 0 0.2rem; box-sizing: border-box;border-radius: 0.08rem;}
+.banner .ser .ico{ position: absolute; right: 0.2rem; background: url("../images/img-pro/serIco.png") no-repeat; width: 0.7rem; height: 0.7rem; background-size: cover;}
+.proNav{ margin-bottom: 0.15rem;}
+.proNav .in { width: 100%; height: 3.3rem; overflow: hidden; background-color: #fff;}
+.proNav .in a{ display: block; overflow: hidden; float: left; overflow: hidden; box-sizing: border-box;}
+.proNav .in a img{ width: 100%; height: 100%; display: block;}
+.proNav .in .inF{ width: 36%; overflow: hidden;}
+.proNav .in .inF a{ border-right: 1px solid #ebebeb;width: 100%; }
+.proNav .in .inR{ width: 64%; overflow: hidden;}
+.proNav .in .inR a.li02,.proNav .in .inR a.li03{ width: 50%; height: 50%; }
+.proNav .in .inR a.li03{ border-left: 1px solid #ebebeb;}
+.proNav .in .inR a.li04{ border-top: 1px solid #ebebeb;}
+.proList { background-color: #fff; overflow: hidden;}
+.proList .tab{ position: relative; width: 100%;height: 0.8rem; }
+.proList .tab ol{width: 100%;;height: 0.8rem; line-height: 0.8rem ; background-color: #fff; box-sizing: border-box; max-width: 640px; min-width: 320px; margin: 0 auto;border-bottom: 1px solid #ebebeb; }
+.proList .tab ol li{ width: 33.33%; text-align: center;  font-size: 0.3rem; float: left; line-height: 0.78rem; border-bottom: 2px solid transparent;}
+.proList .tab ol li span{ display: inline-block; border-bottom: 2px solid transparent; height: 0.78rem; box-sizing: border-box;}
+.proList .tab ol li.cur span{ border-color: #d5162a;}
+.proList .list ul{ overflow: hidden;  width: 100%;background-color: #fff; border-top:1px solid #ebebeb; float: left; }
+.proList .list ul:first-of-type{ display: block;}
+.proList .list ul li{width:50%; height:5.2rem;padding-bottom: 0.1rem;  border-right: 2px solid #ebebeb; border-bottom: 2px solid #ebebeb; box-sizing: border-box;  float: left;  position: relative; }
+.proList .list ul li:nth-of-type(odd){}
+.proList .list a{ display: block;}
+.proList .list .tp{ width:100%; overflow: hidden; }
+.proList .list .tp img{ width: 100%;}
+.proList .list .txt{ padding: 0 6%; margin-top: 0.1rem; }
+.proList .list .txt .ti{ font-size: 0.28rem; color: #333; line-height: 0.34rem; margin-top: 0.2rem;}
+.proList .list .txt .info{ position: absolute; bottom: 0.2rem; width:88%;}
+.proList .list .txt .info .xl{ font-size: 0.22rem; color: #999; margin-top: 0.05rem; }
+.proList .list .txt .info .xl em{color: #d5162a}
+.proList .list .txt .info .pr{ font-size: 0.3rem; color: #d5162a;}
+.proList .list .txt .label{ color: #d5162a; font-size: 0.18rem; padding: 0.1rem 0.15rem; border: 1px solid #d5162a;  border-radius: 0.06rem; display: inline-block;}
+.tabBox .hd ol{ overflow:hidden;  }
+.tabBox .hd ol li{ float:left; color:#515151;  }
+.tabBox .hd ol li.on span{ border-bottom:2px solid #d5162a;color: #d5162a; }
+
+/*proList.html*/
+.proSort{ width: 100%; height: 0.7rem; position: relative; }
+.proSort ol{ width: 100%; height: 0.7rem;  font-size: 0.3rem; background-color: #fff; box-shadow: 0 2px 0.1rem #e2e2e2; max-width: 640px; min-width: 320px; margin: 0 auto; position: fixed; top: 0.8rem; z-index: 11;}
+.proSort ol>li{ width: 50%; text-align: center; float: left;line-height: 0.5rem;}
+.proSort ol>li span{ width: 100%; display: inline-block; margin:0.1rem 0 ; box-sizing: border-box; }
+.proSort ol>li:first-of-type span{ border-right: 1px solid #ccc;}
+.proSort ol>li span:after{ content: ""; width:0.4rem;  height: 0.4rem; background: url("../images/img-pro/arr.png") no-repeat left top; background-size: 0.8rem; height: 0.4rem; display: inline-block;  vertical-align: sub;}
+.proSort ol>li.cur{ color: #d5162a;}
+.proSort ol>li.cur span:after{ background-position: right top;}
+#sortPop01,#sortPop02{ display: none;}
+.sortPop{  width: 100%; height: 100%; min-height: 100%;  background-color: rgba(0,0,0,0.5); position: fixed; left: 0; top: 1.5rem;z-index: 12; max-width: 640px; min-width: 320px; margin: 0 auto; }
+.sortPop .in{ background-color: #fff; }
+.sortPop ul{ overflow: hidden;font-size: 0.3rem;}
+.sortPop ul li{ line-height: 0.8rem; border-top: 1px solid #ebebeb; padding: 0 0.3rem;}
+.sortPop ul li span{ margin-left: 0.05rem;}
+.sortPop ul li.cur span{ color: #d5162a;}
+.sortPop ul li.cur span:after{ content: ""; width: 0.4rem; height: 0.4rem; background: url("../images/img-pro/che.png") no-repeat; background-size: cover; display: inline-block; vertical-align: middle; float: right; margin-top: 0.2rem; }
+.sortPop ul li i{ width: 0.5rem; height: 0.5rem; background: url("../images/img-pro/sort.png") no-repeat; background-size: 1rem 5rem; display: inline-block; vertical-align: middle; }
+.sortPop01 ul li:first-of-type i{ background-position: 0 0; }
+.sortPop01 ul li:nth-of-type(2) i{ background-position: 0 -0.5rem; }
+.sortPop01 ul li:nth-of-type(3) i{ background-position: 0 -1rem; }
+.sortPop01 ul li:nth-of-type(4) i{ background-position: 0 -1.5rem; }
+.sortPop01 ul li.cur:first-of-type i{ background-position:  -0.5rem 0; }
+.sortPop01 ul li.cur:nth-of-type(2) i{ background-position: -0.5rem -0.5rem; }
+.sortPop01 ul li.cur:nth-of-type(3) i{ background-position: -0.5rem -1rem; }
+.sortPop01 ul li.cur:nth-of-type(4) i{ background-position: -0.5rem -1.5rem; }
+.sortPop02 ul li:first-of-type i{ background-position:0 -4rem; }
+.sortPop02 ul li:nth-of-type(2) i{ background-position:0 -0.5rem; }
+.sortPop02 ul li:nth-of-type(3) i{ background-position:0 -2.5rem; }
+.sortPop02 ul li:nth-of-type(4) i{ background-position:0 -3rem; }
+.sortPop02 ul li:nth-of-type(5) i{ background-position:0 -3.5rem; }
+.sortPop02 ul li.cur:first-of-type i{ background-position: -0.5rem -4rem; }
+.sortPop02 ul li.cur:nth-of-type(3) i{ background-position: -0.5rem -2rem; }
+.sortPop02 ul li.cur:nth-of-type(3) i{ background-position: -0.5rem -2.5rem; }
+.sortPop02 ul li.cur:nth-of-type(4) i{ background-position: -0.5rem -3rem; }
+.sortPop02 ul li.cur:nth-of-type(5) i{ background-position: -0.5rem -3.5rem; }
+.goods .in{ background-color: #fff; margin-top: 1px; overflow: hidden;}
+.goods ul{ overflow: hidden;}
+.goods ul li{ height: 2.8rem; padding:0.4rem 0.2rem; box-sizing: border-box; border-bottom: 1px solid #ebebeb;}
+.goods .tp{ width:1.9rem; height: 1.9rem; overflow: hidden; position: relative; float: left;}
+.goods .tp img{ width: 100%; display: block;}
+.goods .txt{ height:1.9rem; margin-left: 2.1rem; margin-top: 0.1rem; position: relative;}
+.goods .txt .label{ color: #d5162a; border: 1px solid #d5162a; padding: 0.05rem; font-size: 0.2rem;}
+.goods .txt .ti{ font-size: 0.28rem; line-height: 0.4rem; margin-top: 0.15rem;}
+.goods .txt .bot{ width: 100%; position: absolute; bottom: 0;}
+.goods .txt .bot .num{ color: #999; font-size: 0.22rem;}
+.goods .txt .bot .num em{ color: #d5162a;}
+.goods .txt .bot .pri{ font-size: 0.32rem; color: #d5162a;}
+
+/*.proDet.html*/
+.comHd .kfIco{ width: 0.5rem; height: 0.8rem; background: url("../images/img-pro/kfico.png") no-repeat; background-size: cover; position: absolute; top: 0; right:0.15rem;}
+.goodsDet{ margin-bottom: 0.1rem;}
+.goodsDet .in{ background-color: #fff; padding:0.3rem 0.2rem; border-top: 1px solid #ebebeb; box-sizing: border-box; position: relative;}
+.goodsDet .detHd{ }
+.goodsDet .detHd .name{ padding-right:1.4rem; }
+.goodsDet .detHd .name p{font-size: 0.28rem; line-height: 0.4rem; }
+.goodsDet .detHd .lab{ color: #d5162a; padding:0.03rem 0.05rem; border: 1px solid #d5162a; font-size: 0.2rem; margin-right: 0.1rem;}
+.goodsDet .detHd .share{ position: absolute; right: 0.1rem; top: 0.2rem;}
+.goodsDet .detHd .share a{ padding: 0.2rem; border-left: 1px solid #ccc;}
+.goodsDet .detHd .share a i{ width: 0.5rem; height: 0.5rem; background: url("../images/img-pro/shareIco.png") no-repeat; background-size: contain; display: inline-block;  }
+.goodsDet .detHd .share a span{ color: #666; font-size: 0.2rem; display: block; text-align: center;}
+.goodsDet .detBd{ margin-top: 0.5rem;color: #999; overflow: hidden;}
+.goodsDet .detBd .num{ font-size: 0.2rem;}
+.goodsDet .detBd .num em{ color: #d5162a;}
+.goodsDet .detBd .pri{ font-size: 0.2rem; text-align: right; }
+.goodsDet .detBd .pri span em{ font-size: 0.32rem; color: #d5162a;}
+.goodsDet .detBd .pri del{ font-size: 0.22rem; margin-top: 0.2rem; display: block;}
+.goodsInf{ background-color: #fff;}
+.goodsInf .in{ width: 100%;}
+.goodsInf .tabHd{ width: 100%; height: 0.8rem; position: relative;}
+.goodsInf .tabHd ol{ overflow: hidden; width: 100%;border-bottom: 1px solid #ebebeb;background-color: #fff; box-shadow: 0 2px 0.1rem #e6e6e6; max-width: 640px; min-width: 320px; margin: 0 auto;}
+.goodsInf .tabHd ol li{ width: 33.3%; float: left; text-align: center;}
+.goodsInf .tabHd ol li span{ line-height: 0.78rem; border-bottom: 2px solid transparent; margin-top: 1px; font-size: 0.3rem; display: inline-block;}
+.goodsInf .tabHd ol li.cur span{ color: #d5162a; border-color: #d5162a;}
+.goodsInf .tabHd ol li em{ color: #d5162a;}
+.goodsInf .tabBd{ padding: 0.2rem;  background-color: #fff; overflow: hidden;}
+.goodsInf .tabBd ul{ float: left;box-sizing: border-box; height: auto; width: 100%; overflow: auto; background-color: #fff;}
+.goodsInf .tabBd li{ overflow: hidden; }
+.goodsInf .tabBd img{ display: block; margin: 2px auto; vertical-align: top; max-width: 100%;  }
+.goodsInf .tabBd .item{ line-height: 1rem; font-size: 0.26rem;border-bottom:1px solid #ebebeb; overflow: hidden;}
+.goodsInf .tabBd .item .ti{ color: #666; width: 30%; display: inline-block; padding-left: 0.2rem; box-sizing: border-box; float: left;}
+.goodsInf .tabBd .item .tr{ width: 70%; float: left;}
+.goodsInf .tabBd .item .tr span{ margin-right: 0.1rem;}
+.goodsInf .tabBd li.li03 .pjItem{ padding: 0.3rem 0;  border-bottom: 1px solid #e2e2e2;}
+.goodsInf .tabBd li.li03 .pjItem:last-of-type{ border-bottom: none;}
+.goodsInf .tabBd li.li03 .itHd{ overflow: hidden; margin-bottom: 0.15rem; }
+.goodsInf .tabBd .itHd .name{ font-size: 0.24rem; color: #666; margin-right: 0.25rem;float: left;}
+.goodsInf .tabBd .itHd .star{ float: left;}
+.goodsInf .tabBd .star span{ width: 0.27rem; height: 0.25rem; background: url("../images/img-my/star.png"); background-size: cover; display: inline-block;}
+.goodsInf .tabBd .star span.hover{ background-position: right top;}
+.goodsInf .tabBd .remark{ color: #120101; font-size: 0.22rem; line-height: 0.34rem;}
+.goodsInf .tabBd .bot{ font-size: 0.18rem; color: #666; margin-top: 0.15rem; }
+.goodsInf .tabBd .bot span{ display: inline-block; margin-right: 0.1rem;}
+.goodsInf .tabBd .bot span em{ margin: 0 2px;}
+.goodsBuy{ position: relative; height: 1rem;}
+.goodsBuy .in{ width: 100%; height: 0.9rem; background-color: #fff;  box-shadow: 0 0 0.1rem #b7b7b7; position: fixed; bottom:0; z-index: 11;max-width: 640px; min-width: 320px; margin: 0 auto;}
+.goodsBuy .car{ width: 25%; text-align: center; position: relative;}
+.goodsBuy .car img{ width: 0.6rem; height: 0.6rem; display: block; margin: 0 auto;}
+.goodsBuy .car span{ font-size: 0.18rem;}
+.goodsBuy .car .num{ color: #fff; font-size: 0.24rem; width: 0.38rem; height: 0.38rem; line-height: 0.38rem; text-align: center; border-radius: 50%; background-color: #ff4040; position: absolute; right: 0.2rem; top: -0.15rem;}
+.goodsBuy .btn{ width: 75%;}
+.goodsBuy .btn a{ width: 50%; height: 0.9rem;line-height: 0.9rem; text-align: center; color: #fff; font-size: 0.3rem; display: inline-block; float: left;}
+.goodsBuy .btn a.imeBuy{ background-color: #ffa740;}
+.goodsBuy .btn a.addCar{ background-color: #d5162a;}
+.sharePop{ width: 100%; height: 100%; max-height: 100%; position: fixed; left: 0;  top:100%;  z-index: 100;max-width: 640px; min-width: 320px; margin: 0 auto; background-color: rgba(0,0,0,0.4); }
+.sharePop .in{ padding: 0.3rem 0; background-color: #fff; text-align: center; position:absolute; bottom: 0; left: 0; }
+.sharePop h3{ font-size: 0.32rem; text-align: center;}
+.sharePop ul{ width: 100%; overflow: hidden;padding-top: 0.2rem;}
+.sharePop ul li{ width: 25%; float: left; text-align: center; }
+.sharePop ul li img{ width: 80%;}
+.sharePop ul li span{ font-size: 0.24rem; color: #999; margin-top: 0.1rem; display: block;}
+.sharePop .cancle{ font-size: 0.3rem; color: #777; padding: 0.3rem; padding-bottom: 0; margin-top: 0.3rem; display: inline-block;}
+.buyPop{ width: 100%; height: 100%; max-height: 100%; position: fixed; left: 0; top: 0; z-index: 100;max-width: 640px; min-width: 320px; margin: 0 auto; background-color: rgba(0,0,0,0.4);}
+.buyPop .in{ position: absolute; left: 0;bottom: 0; background-color: #fff; width: 100%;}
+.buyPop .in .close{ position: absolute; right: .2rem; top: 0.2rem; width: 0.5rem; height: 0.5rem; background: url("../images/img-pro/close.png") no-repeat; background-size: cover; }
+.buyPop .mid{ padding: 0.3rem; padding-bottom: 0;}
+.buyPop .mid .ti{ font-size: 0.3rem;}
+.buyPop .mid .price{ font-size: 0.32rem; color: #d5162a; margin-top: 0.3rem;}
+.buyPop ul{ overflow: hidden; margin-top: 0.4rem;}
+.buyPop ul li{ font-size: 0.28rem; background-color: #ebebeb; padding: 0.12rem 0.15rem; border-radius: 0.18rem; float: left; margin:0 0.2rem; margin-bottom: 0.2rem;}
+.buyPop ul li.cur{ background-color: #d5162a; color: #fff;}
+.selNum{ margin-top: 0.4rem; padding:  0.25rem 0; border-top: 1px solid #dedede; text-align: center;}
+.selNum>span{ width: 0.5rem; height: 0.5rem; background: url("../images/img-pro/jiajian.png") no-repeat; background-size: 1rem 0.5rem; display: inline-block; vertical-align: middle; }
+.selNum>span.reduceBtn{ background-position: left top;}
+.selNum>span.addBtn{ background-position: right top;}
+.selNum input{ width: 3rem; font-size: 0.36rem;line-height: 0.5rem; display: inline-block; text-align: center;vertical-align: middle;}
+.ensureBtn{ width: 100%; height: 0.8rem; line-height: 0.8rem; text-align: center; background-color: #d5162a; font-size: 0.3rem; color: #fff; display: block; }
+
+/*teamBuy.html*/
+.teamSer{ width: 100%; padding:0.18rem; box-sizing: border-box; max-width: 640px; min-width: 320px; margin: 0 auto;
+    background-color: transparent; transition:background-color 1.5s linear;-webkit-transition:background-color 1.5s linear;-moz-transition:background-color 1.5s linear;-ms-transition:background-color 1.5s linear; transform: translateZ(0);}
+.teamSer.show{ background-color: #d5162a; position: fixed; top:0;}
+.teamSer .ser{ background-color: #fff;border-radius: 0.08rem; position: relative;}
+.teamSer .ser input{ width: 100%; height: 0.7rem; line-height: 0.7rem; font-size: 0.28rem; padding: 0 0.6rem 0 0.2rem; box-sizing: border-box;border-radius: 0.08rem;}
+.teamSer .ser .ico{ position: absolute; right: 0.1rem; top: 0; background: url("../images/img-pro/serIco.png") no-repeat; width: 0.7rem; height: 0.7rem; background-size: contain;}
+.teamItem{ overflow: hidden;  border-radius:0.16rem; margin:0.1rem; margin-bottom: 0.4rem;}
+.teamItem .in{ background-color: #fff;}
+.teamItem .advTit{ width: 100%; height: 1.7rem; overflow: hidden;}
+.teamItem .advTit img{ width: 100%;}
+.teamItem ul{ overflow: hidden;background-color: #fff;}
+.teamItem li{ width: 50%; height: 4.1rem; float: left; box-sizing: border-box; padding: 0.1rem;text-align: center;}
+.teamItem .tp{ width: 2.4rem; height: 2.4rem; overflow: hidden; margin: 0 auto; margin-top: 0.1rem;}
+.teamItem .tp img{ width: 100%; display: block;}
+.teamItem .txt{ font-size: 0.28rem; color: #666;line-height: 0.36rem; margin-top: 0.2rem; }
+.teamItem .txt .pri{margin-top: 0.1rem;}
+.teamItem .txt .pri a{ font-size: 0.32rem; color: #89313F; }
+.teamItem01{ border: 1px solid #b9313f; }
+.teamItem01 li:nth-of-type(odd){ border-right: 1px solid #b9313f;}
+.teamItem01 li{ border-bottom: 1px solid #b9313f;}
+.teamItem01 li:nth-last-of-type(2),.teamItem01 li:last-of-type{ border-bottom: none;}
+.teamItem02{ border: 1px solid #e6b43c;}
+.teamItem02 li:nth-of-type(odd){ border-right: 1px solid #e6b43c;}
+.teamItem02 li{ border-bottom: 1px solid #e6b43c;}
+.teamItem02 li:nth-last-of-type(2),.teamItem02 li:last-of-type{ border-bottom: none;}
+.teamItem03{ border: 1px solid #65b927;}
+.teamItem03 li:nth-of-type(odd){ border-right: 1px solid #65b927;}
+.teamItem03 li{ border-bottom: 1px solid #65b927;}
+.teamItem03 li:nth-last-of-type(2),.teamItem03 li:last-of-type{ border-bottom: none;}
+
+.tbCon{ width: 100%; height: 1.2rem; background-color: #ffe5e8; margin-top: -.1rem; margin-bottom: .1rem;}
+.tbCon .tL{ width: 37.5%; height: 1.2rem; float: left;color: #fff; padding-left: .25rem; box-sizing: border-box; background-color: #d5162a;}
+.tbCon .tL .ti{ font-size: .2rem; display: block; margin-top: .2rem;}
+.tbCon .tL p{ margin-top: .25rem;}
+.tbCon .tL p span{ font-size: .42rem;}
+.tbCon .tL p del{ font-size: .22rem; color: #ffbaba;}
+.tbCon .tR{ width: 62.5%; float: right; height: 1.2rem; }
+.tbCon .tR p{ font-size: .2rem; padding-left: .1rem; margin-top: .2rem;}
+.tbCon .tR p i{ width: .2rem; height: .2rem; background-size: cover; background-repeat: no-repeat; background-image: url(../images/img-pro/ico1.png); display: inline-block; }
+.tbCon .tR p.rshu em{ font-size: .3rem;}
+.tbCon .tR p.time i{ background-image: url(../images/img-pro/ico2.png);}
+
+/*shopCar.html*/
+.shopCar{ margin-top: 0;}
+.shopCar ul li{ margin-bottom: 0.1rem;}
+.shopCar .tp{ width: 1.7rem; height: 1.7rem;}
+.shopCar .item{ position: relative;}
+.shopCar .item .ck{ width: 0.4rem; height: 2rem; background-color: transparent; float: left;}
+.shopCar .item i.che{ position: absolute; left: 0;width: 0.26rem; height: 0.3rem; background: url("../images/img-pro/cheche.png") no-repeat left top; background-size: cover; display: inline-block;}
+.shopCar .item i.che.cur{ background-position: right top;}
+.handle{ width: 100%; height: 0.8rem; position: relative; }
+.handle .in{ width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #fff; font-size: 0.3rem; text-align: center; position: fixed; bottom:1rem; max-width: 640px; min-width: 320px; margin: 0 auto; box-shadow: 0 0 0.1rem #b7b7b7;}
+.handle .edit{ width: 20%;}
+.handle .edit.hover{ color: #d5162a;}
+.handle .money{ width: 42.5%;}
+.handle .money span{ color: #999; font-size: 0.24rem; margin-right: 0.1rem;}
+.handle .money em{ color: #d5162a;}
+.handle .accounts{ width: 37.5%; color: #fff; background-color: #d5162a;}
+.handle .accounts a{ color: #fff; display: block;}
+.handle .edPop{ width: 1.8rem; height: 1.6rem; background-color: #fff; border: 1px solid #ccc; position: absolute; left: 0.2rem; bottom:0.8rem;}
+.handle .edPop span{ width: 80%; line-height: 0.8rem;text-align: center;  margin: 0 auto;  display: block; }
+.handle .edPop .del{ border-bottom: 1px solid #ccc;}
+
+
+
+
+
+
+
+
+
+

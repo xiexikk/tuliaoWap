@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/my.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/com.js"></script>
+</head>
+<body>
+
+<section class="proDd shopCar">
+    <div class="in">
+        <div style="width: 100%; overflow: hidden;">
+            <img src="../images/img-my/noShop.png" alt="" style="width: 100%;">
+        </div>
+        <p style="text-align: center; margin-top: .2rem;">
+            <a href="#" style="font-size: .24rem; border: 1px solid #ccc; padding: .1rem .2rem; border-radius: .08rem;">去逛逛</a>
+        </p>
+    </div>
+</section>
+
+<section class="proDd shopCar">
+    <div class="in">
+        <ul>
+            <li>
+                <div class="item">
+                    <div class="ck">
+                        <i class="che ver_center"></i>
+                    </div>
+                    <a href="javascript:;">
+                        <div class="tp">
+                            <img src="../images/img-pro/goods01.png" alt="商品">
+                        </div>
+                        <div class="txt">
+                            <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                            <p class="type">型号：40kg</p>
+                            <p class="bot">
+                                <span class="nu fl">×1</span>
+                                <span class="pri fr">￥200.00</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="ck">
+                        <i class="che ver_center"></i>
+                    </div>
+                    <a href="javascript:;">
+                        <div class="tp">
+                            <img src="../images/img-pro/goods01.png" alt="商品">
+                        </div>
+                        <div class="txt">
+                            <p class="ti">M1100环保型熟胶粉产品特点白色金色40kg系列</p>
+                            <p class="type">型号：40kg</p>
+                            <p class="bot">
+                                <span class="nu fl">×1</span>
+                                <span class="pri fr">￥200.00</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="handle">
+    <div class="in">
+        <div class="edit fl">
+            <span>编辑</span>
+        </div>
+        <div class="money fl">
+            <span>共计</span>
+            <em class="allPri">￥600.00</em>
+        </div>
+        <div class="accounts fr">
+           <a href="../my/payment.html" ><span>结算（<em class="num">2</em>）</span></a>
+        </div>
+        <div class="edPop">
+            <span class="del">删除</span>
+            <span class="allChe">全选</span>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <nav class="nav" >
+        <ul>
+            <li><a href="../index.html"><img src="../images/img-pro/nav01.png" rel="../images/img-pro/nav01-hover.png" alt="首页" /><span>首页</span></a></li>
+            <li><a href="teamBuy.html"><img src="../images/img-pro/nav02.png" rel="../images/img-pro/nav02-hover.png" alt="拼单" /><span>拼单</span></a></li>
+            <li class="cur"><a href="shopCar.html"><img src="../images/img-pro/nav03.png" rel="../images/img-pro/nav03-hover.png" alt="购物车" /><span>购物车</span></a></li>
+            <li><a href="../my/my.html"><img src="../images/img-pro/nav04.png" rel="../images/img-pro/nav04-hover.png" alt="我的" /><span>我的</span></a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script>
+   /* 购物车*/
+    $(function(){
+        function shopCar(li,ck,che,edit,del,allChe,pop){
+            $(pop).hide();
+            $(edit).on('tap',function(){
+                $(pop).toggle();
+                $(this).toggleClass('hover')
+                if($(li).size()==0){
+                    $(pop).hide();
+                }
+            })
+            /*单选*/
+            var chkNum = $(che).size();
+            $(ck).on('tap',function(){
+                $(this).find(che).toggleClass('cur');
+                var chk = 0;
+                for(var i = 0;  i < chkNum; i++){
+                    if($(che).eq(i).hasClass('cur')){
+                        chk++;
+                    }
+                }
+                if(chkNum==chk){
+                    $(allChe).html('取消全选');
+                }else{
+                    $(allChe).html('全选');
+                }
+            });
+
+            /* 全选*/
+            $(allChe).on('tap',function(){
+                if($(che).hasClass('cur')){
+                    $(che).removeClass('cur');
+                    $(allChe).html('全选');
+                }else{
+                    $(che).addClass('cur');
+                    $(allChe).html('取消全选');
+                }
+
+            });
+
+            /* 删除*/
+            $(del).on('tap',function(){
+                $('.shopCar li').each(function(){
+                    if($(this).find('.che').hasClass('cur')){
+                        $(this).remove();
+                    }
+                })
+                if( $(li).size()==0){
+                    $(pop).hide();
+                }
+            });
+        }
+
+        shopCar('.shopCar li','.ck','.che','.edit','.del','.allChe','.edPop');
+
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人资料修改</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/my.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/com.js"></script>
+    <script src="../js/my.js"></script>
+</head>
+<body>
+
+<header class="comHd">
+    <div class="in">
+        <div class="hdTit">
+            <a href="javascript:history.back(-1)" class="backIco"></a>
+            <h2>个人资料修改</h2>
+        </div>
+    </div>
+</header>
+
+<section class="perData">
+    <div class="in">
+        <form action="" method="">
+            <div class="inpCom">
+                <div class="inp">
+                    <span class="ti">帐号</span>
+                    <div class="tr">
+                        <input type="text" placeholder="请填写账号" value="12345678910" readonly>
+                    </div>
+                </div>
+                <div class="inp">
+                    <span class="ti">密码</span>
+                    <div class="tr">
+                        <a href="chgPwd.html">点击修改</a>
+                    </div>
+                </div>
+                <div class="inp inp3">
+                    <span class="ti">头像</span>
+                    <div class="tr">
+                        <div class="upBtn">
+                            <input type="file" accept="image/*" id="upLoadTx">
+                            <label for="upLoadTx"><i></i>重新上传</label>
+                        </div>
+                    <span class="tp">
+                        <img src="../images/img-my/myTx.jpg" alt="个人头像" id="imgHead">
+                    </span>
+                    </div>
+                </div>
+                <div class="inp inp2">
+                    <span class="ti">座右铭</span>
+                    <div class="tr">
+                        <textarea placeholder="可填写座右铭" >知道的不要全说,听到的不要全信。这样生活才会安宁。</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="inpCom">
+                <div class="inp">
+                    <span class="ti">真实姓名</span>
+                    <div class="tr">
+                        <input type="text" placeholder="" value="麦兜">
+                    </div>
+                </div>
+                <div class="inp">
+                    <span class="ti">身份证</span>
+                    <div class="tr">
+                        <input type="text" placeholder="" value="1234567898810333">
+                    </div>
+                </div>
+            </div>
+            <div class="inpCom">
+                <div class="inp">
+                    <span class="ti">店铺名称</span>
+                    <div class="tr">
+                        <input type="text" placeholder="请填写店铺名称" value="光彩涂料">
+                    </div>
+                </div>
+                <div class="inp">
+                    <span class="ti">店铺地址</span>
+                    <div class="tr">
+                        <div id="addAddress">
+                            <div class="address_input">
+                                <input class="address_input1" type="text" placeholder="请选择省市区" value="广东省广州市白云区" id="shengshi" onClick="getProvinceBuy()" readonly>
+                            </div>
+                        </div>
+                        <i class="ver_center"></i>
+                    </div>
+                </div>
+                <div class="inp inp4">
+                    <textarea placeholder="请输入店铺详细地址">228云城西路228创意园</textarea>
+                </div>
+                <div class="inp inp5 shop">
+                    <div class="">
+                        <span class="ti">店铺图片</span>
+                        <div class="upBtn fl">
+                            <input type="file" accept="image/*" id="shopTp" multiple>
+                            <label for=shopTp><i></i>上传照片</label>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="pic">
+                            <span class="tp">
+                                <img src="../images/img-pro/ban01.png" alt="店铺照片" >
+                            </span>
+                            <i class="del">X</i>
+                        </li>
+                        <li class="pic">
+                            <span class="tp">
+                                <img src="../images/img-pro/ban02.png" alt="店铺照片" >
+                            </span>
+                            <i class="del">X</i>
+                        </li>
+                        <li class="pic">
+                            <span class="tp">
+                                <img src="../images/img-pro/ban03.png" alt="店铺照片" >
+                            </span>
+                            <i class="del">X</i>
+                        </li>
+                        <li class="pic">
+                            <span class="tp">
+                                <img src="../images/img-pro/ban01.png" alt="店铺照片" >
+                            </span>
+                            <i class="del">X</i>
+                        </li>
+                        <li class="pic">
+                            <span class="tp">
+                                <img src="../images/img-pro/ban02.png" alt="店铺照片" >
+                            </span>
+                            <i class="del">X</i>
+                        </li>
+                        <li class="pic">
+                            <span class="tp">
+                                <img src="../images/img-pro/ban03.png" alt="店铺照片" >
+                            </span>
+                            <i class="del">X</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inp inp6">
+                    <span class="ti">代理品牌</span>
+                    <div class="tr" id="brandBtn">
+                        <input type="text" placeholder="请选择代理的品牌" value="立邦、卡帮漆、展晨涂料" readonly>
+                        <i class="ver_center"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btnCom">
+                <a href="javascript:;">保存</a>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="brandPop">
+    <div class="in center">
+        <i class="close">×</i>
+        <h3 class="tit">请选择代理品牌</h3>
+        <ul>
+            <li>立邦</li>
+            <li class="cur">晨展涂料</li>
+            <li>巴德士漆</li>
+            <li>卡丹漆</li>
+            <li>费列罗</li>
+            <li>蓝海涂料</li>
+            <li>深海大鱼</li>
+            <li>粒粒漆</li>
+            <li>哗啦啦</li>
+            <li>呵呵</li>
+            <li>噢噢</li>
+            <li>嘻嘻啦啦</li>
+        </ul>
+    </div>
+</section>
+
+<script src="../js/city.js"></script>
+<script src="../js/area.js"></script>
+<script>
+    /*个人头像*/
+    $("#upLoadTx").change(function() {
+        var $file = $(this);
+        var fileObj = $file[0];
+        var windowURL = window.URL || window.webkitURL;
+        var dataURL;
+        var $img = $("#imgHead");
+        if(fileObj && fileObj.files && fileObj.files[0]){
+            dataURL = windowURL.createObjectURL(fileObj.files[0]);
+            $img.attr('src',dataURL);
+        }else{
+            dataURL = $file.val();
+            var imgObj = document.getElementById("yzzzTp");
+            imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+            imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
+        }
+    });
+</script>
+<script type="text/javascript">
+   /* 店铺图片*/
+    $("#shopTp").change(function() {
+        var $file = $(this);
+        var fileObj = $file[0];
+        var windowURL = window.URL || window.webkitURL;
+        var dataURL;
+        //获取 呈现图片位置
+        var ImgDom=$file.parents(".shop").find("ul");
+        //图片的数量
+        var Imglength=fileObj.files.length;
+        for(var i=0;i<Imglength;i++){
+            dataURL = windowURL.createObjectURL(fileObj.files[i]);
+            var _html='<li class="pic">'+
+                    '<span class="tp">'+
+                    '<img src="'+dataURL+'" >'+
+                    '</span>'+
+                    '<i class="del" onclick="delImg($(this));">X</i>'+'</li>'
+            ImgDom.append(_html);
+        }
+    })
+    //删除图片
+    function delImg(self){
+        self.parents(".shop ul li").remove();
+    }
+</script>
+<script>
+   /* 选择品牌*/
+    $(function(){
+        function showPop(parm1,parm2){
+            var speed = 300;
+            $(parm1).on('tap',function(){
+                $(parm2).fadeIn(speed);
+                $('html').css('overflow','hidden');
+            })
+            $(parm2+' .close').on('tap',function(){
+                $(parm2).fadeOut(speed);
+                $('html').css('overflow','visible');
+            })
+            $(parm2+' li').on('tap',function(){
+                $(this).toggleClass('cur');
+            })
+        }
+        showPop('#brandBtn','.brandPop');
+    })
+</script>
+
+</body>
+</html>

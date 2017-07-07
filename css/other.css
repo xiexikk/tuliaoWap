@@ -1,0 +1,183 @@
+/*login.html*/
+.logRegCom .inpCom{ margin-top: 0.7rem;}
+.logRegCom .inpCom .inp{ width: 100%;  margin-bottom: 0.25rem;box-sizing: border-box;  position: relative; }
+.logRegCom .inpCom .inp input{ width: 100%; height: 0.9rem; line-height: 0.9rem; background-color: #fff; border-radius: 0.08rem; font-size: 0.32rem; padding: 0 0.2rem; box-sizing: border-box;}
+.logRegCom .inpCom .fgPwd{ text-align: right;}
+.logRegCom .inpCom .fgPwd a{color:#1f89e3; font-size: 0.26rem; }
+.logRegCom .inpCom .btn{ width:100%; height: 0.9rem; line-height: 0.9rem; text-align: center; margin-top: 0.3rem;border-radius: 0.08rem; background-color: #1f89e3; }
+.logRegCom .inpCom .btn a{ width: 100%;  color: #fff; font-size: 0.32rem; display: block;}
+.logRegCom .inpCom .linkReg{ margin-top: 0.25rem; text-align: center;}
+.logRegCom .inpCom .linkReg a{ font-size: 0.24rem; color: #999;}
+.warnTip{ color: #f00; font-size: 0.24rem; padding-left: 0.2rem; margin-top: 0.05rem;}
+
+/*register.html*/
+.inpCom .yam{ padding-right: 1.8rem;}
+.inpCom .yam button{ height: 0.9rem; color: #1f89e3; font-size: 0.32rem; padding: 0 0.1rem; background-color: transparent;background-color: #fff; position: absolute; right: 0; top: 0; }
+
+/*perCenter.html*/
+.perCen .in{ width: 100%; height:3.5rem ; background:#fff url("../images/img-oth/bj.png") no-repeat; background-size: cover; padding-top: 0.5rem; box-sizing:border-box; position: relative;}
+.perCen .lab{ position: absolute; left: 0; top:0.3rem; font-size: 0.24rem; color: #fff;padding: 0.16rem 0.18rem; background-color: rgba(0,0,0,0.22); border-radius: 0 0.3rem 0.3rem 0;}
+.perCen .lab em{ padding-left: 0.1rem;}
+.perCen .tp{ width: 1.34rem; height: 1.34rem; border: 2px solid #fff; border-radius: 50%; overflow: hidden; margin:0 auto;}
+.perCen .tp img{ width: 100%; display: block;}
+.perCen .txt{ margin-top: 0.25rem; text-align: center; color: #fff;}
+.perCen .txt .name{ font-size: 0.32rem;}
+.perCen .txt .zh{ font-size: 0.26rem; margin-top: 0.2rem;}
+.perNav{ margin-top: 0.1rem;}
+.perNav ul{ overflow: hidden; background-color: #fff;}
+.perNav ul li{ width: 33.33%; height: auto; float: left; box-sizing: border-box; border-right: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; }
+.perNav ul li:nth-of-type(3n){ border-right: none;}
+.perNav ul li a{ padding: 0.3rem 0; display: block;}
+.perNav .pic{ width: 0.7rem; height: 0.7rem; margin: 0 auto;}
+.perNav .pic img{ width: 100%; display: block;}
+.perNav .ti{ font-size: 0.26rem;text-align: center; margin-top: 0.2rem; display: block;}
+
+/*vipSearch.html*/
+.vipSer{ position: relative; width: 100%;height: 1.3rem;}
+.vipSer .in{ width: 100%;  padding:0.3rem 0.2rem; box-sizing: border-box; background-color: #fff; overflow: hidden; position: fixed; max-width:640px;min-width: 320px; margin: 0 auto; z-index: 22; overflow: hidden;  box-shadow: 0 0.05rem 0.1rem #e4e4e4; }
+.vipSer .in .com{ border-radius: 0.1rem; width: 100%; height: 0.7rem;}
+.vipSer .inp{ width: 75%; height:100%;}
+.vipSer .inp input{ width: 100%; height:100%; line-height: 0.7rem; padding: 0 0.2rem; box-sizing: border-box;  font-size: 0.28rem; background-color: #ebebeb;}
+.vipSer .btn{ width: 25%;  height:100%;}
+.vipSer .btn button{ width: 100%;  height:100%; background-color: #1f89e3;  font-size: 0.32rem; color: #fff;}
+.serList{ margin-top: 0.1rem;}
+.serList .in{ padding:0 0.35rem; background-color: #fff;}
+.serList ul{ overflow: hidden;}
+.serList li{ border-bottom: 1px solid #eaeaea; overflow: hidden; padding:0.28rem 0;}
+.serList li:last-of-type{ border-bottom: none;}
+.serList .tp{ width: 1.1rem; height: 1.1rem; border-radius: 50%; float: left; position: relative;}
+.serList .tp img{ width: 1.1rem; height: 1.1rem; border-radius: 50%; display: block;}
+.serList .tp i{ position: absolute; right: -0.12rem; top:-0.1rem;  width: 0.5rem; height: 0.5rem; background: url("../images/img-oth/vv.png") no-repeat; background-size: cover;}
+.serList .txt{ margin-left: 1.4rem;}
+.serList .txt .name{ font-size: 0.32rem; margin-bottom: 0.1rem;}
+.serList .txt p{ font-size: 0.26rem; color: #999; line-height: 0.34rem;}
+
+/*data.html*/
+.perCen .edit{ color: #fff; font-size: 0.28rem; position: absolute; right: 0.2rem; top: 0.3rem;}
+.data .inpCom{  background-color: #fff;  margin-top: 0.2rem;}
+.data .inp{ height: 0.9rem;border-bottom: 1px solid #ebebeb;}
+.data .inp .ti{ width:30%; padding-left: 0.35rem; box-sizing: border-box; line-height: 0.9rem; display: inline-block; font-size: 0.3rem;color: #999; float: left; }
+.data .inp .tr{ width: 70%; font-size: 0.3rem;  padding: 0 0.2rem;  box-sizing: border-box;  float: left;}
+.data .inp .tr>input{ line-height: 0.9rem; font-size: 0.3rem;}
+.data .inp2{ height: 1.25rem;}
+.data .inp2 textarea{ width: 100%; padding:0.2rem 0 0.1rem; box-sizing: border-box; font-size: 0.3rem;}
+.data .inp5{ height: auto; min-height: 0.9rem; overflow: hidden;}
+.data .inp5 ul{ overflow: hidden; padding: 0.2rem 0;}
+.data .inp5 ul .pic{ width:31%; position: relative; float: left;margin-right:2%; margin-bottom: 0.05rem;}
+.data .inp5 ul .pic:nth-of-type(3n){ margin-right: 0;}
+.data .inp5 ul .pic .tp{ width:100%; height: 1rem; overflow: hidden; display: inline-block; }
+.data .inp5 ul .pic img{ width: 100%; height: 100%;}
+
+/*applyVip.html*/
+.apply .in{ padding: 0.6rem 0.2rem; }
+.apply .inp{ width: 100%; background-color: #fff; border-radius: 0.1rem; margin-bottom: 0.2rem; box-sizing: border-box;}
+.apply .inp .ti{ font-size: 0.32rem; width: 26%; float: left; }
+.apply .inp .tr{ width: 74%; float: left; }
+.apply .inp input[ type="text"]{  width: 100%;  line-height: 0.9rem;padding: 0 0.2rem; font-size:0.32rem; box-sizing: border-box;border-radius: 0.1rem; verflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;}
+.apply .inp textarea{ min-height: 0.9rem; font-size: 0.32rem;  width: 100%;  padding: 0.2rem; box-sizing: border-box;border-radius: 0.1rem; }
+.apply .inp select{ width: 100%; padding: 0.2rem; font-size: 0.32rem; box-sizing: border-box;border-radius: 0.1rem; color: #999; }
+.apply .inp2{ min-height: 1.9rem; padding:0.3rem 0.2rem;}
+.apply .inp2 .tp{ float: right; width: 1.34rem; height: 1.34rem;overflow: hidden;border: 1px solid #ccc;; box-sizing: border-box;}
+.apply .inp .tp img{ width: 100%; display: block;}
+.apply .inp2 .upBtn{ padding: 0.12rem 0.18rem; color:#fff;  font-size: 0.28rem; display: inline-block; float: left; position: relative;  background-color: #d5162a;  border-radius: 0.05rem;}
+.apply .inp2 .upBtn input{ opacity: 0; position: absolute; left: 0; top: 0;  width: 100%; height: 100%; font-size: 0.3rem;}
+.apply .btn{ width: 100%; height: 0.9rem; line-height: 0.9rem; text-align: center; background-color: #1f89e3; border-radius: 0.1rem; margin-top: 0.5rem;}
+.apply .btn a{ font-size: 0.34rem; color: #fff;}
+
+/*applyVipNext.html*/
+.applyNext .inp3{ overflow: hidden; padding: 0.3rem 0.2rem; }
+.applyNext .inp3 .ti{ box-sizing: border-box;}
+.applyNext .inp3 .ti p{ font-size: 0.24rem; color: #999; margin-top: 0.1rem;}
+.applyNext .inp3 .upBtn{ width: 1.17rem; height: 1.17rem; overflow: hidden; position: relative;  vertical-align: middle; display: inline-block;}
+.applyNext .inp3 .upBtn input{ width: 100%; height: 100%; position: absolute; left: 0; top:0; opacity: 0; filter: alpha(opacity=0);}
+.applyNext .inp3 .upBtn label{ width: 100%; height: 100%; display: inline-block; background: url("../images/img-oth/add.png") no-repeat; background-size: cover; position: absolute; left: 0; top:0; z-index: 1;}
+.applyNext .inp3 .tr{ max-height: 1.4rem; overflow: hidden;  padding-top: 0.2rem; padding-right:0.15rem;box-sizing: border-box; }
+.applyNext .inp3 ul li{ width: 30%; height:1.2rem; margin-right: 5%; float: left; margin-bottom: 0.2rem; position: relative; }
+.applyNext .inp3 ul li:nth-of-type(3n){ margin-right: 0;}
+.applyNext .inp3 ul li .tp{ display: block; width: 100%; height: 100%; box-sizing: border-box; border: 1px solid #ccc;}
+.applyNext .inp3 ul img{ width: 100%; height: 100%;}
+.applyNext .inp3 ul .del{ width: 0.3rem; height: 0.3rem; line-height: 0.3rem; text-align: center; color: #fff; font-size: 0.2rem;border-radius: 50%; background-color: #999999; position: absolute; right: -0.1rem; top: -0.1rem; }
+.applyNext .inp4 .tr{ max-height: 2.8rem;}
+
+/*applySuc.html*/
+.applySuc .in{ text-align: center; }
+.applySuc .pic{ width:1.5rem; height: 1.5rem; overflow: hidden; margin:0 auto;}
+.applySuc .pic img{ width: 100%;}
+.applySuc .tip{ font-size: 0.4rem; margin-top: 0.1rem; color: #40c521;}
+.applySuc .txt{ padding:0.2rem 0; text-align: center;font-size: 0.28rem; }
+
+/*news.html*/
+.news{ position: relative; height: 0.8rem;}
+.news .in{ position: fixed; top:0; z-index: 99; width: 100%; height: 0.8rem; background-color: #fff; max-width: 640px; min-width: 320px; margin: 0 auto;}
+.news .tab{ width: 100%; height: 100%; box-shadow: 0 0.05rem 0.1rem #bfbfbf;}
+.news .tab ol{ overflow: hidden; display: flex; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox;}
+.news .tab ol li{ height: 0.8rem; box-sizing: border-box; flex: 1; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; text-align: center; }
+.news .tab ol li span{ display: inline-block;line-height: 0.78rem; margin-top: -1px; border-bottom: 2px solid transparent; font-size: 0.3rem; }
+.news .tab ol li.cur span{ color: #1f89e3; border-bottom-color: #1f89e3;}
+.newsCom ul{ overflow: hidden;}
+.newsCom .adv{ width: 100%; height: 3.2rem; overflow: hidden; position: relative;}
+.newsCom .adv .tp{ width: 100%; height: 100%; overflow: hidden;}
+.newsCom .adv .tp img{ width: 100%; display: block;}
+.newsCom .adv .tx{ width: 90%; left: 5%; font-size: 0.3rem; color: #fff; position: absolute; bottom:0.2rem; overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;}
+.newsCom .inf{ padding: 0.2rem 0.1rem;}
+.newsCom .fCom{ overflow: hidden; margin-bottom: 0.2rem;}
+.newsCom .fCom .item{ padding: 0.15rem; background-color: #fff; overflow: hidden; margin-bottom: 0.1rem; position: relative;}
+.newsCom .fCom .item:last-of-type{ margin-bottom: 0;}
+.newsCom .fCom .item .itL { overflow: hidden; width: 70%; padding-right: 0.2rem; box-sizing: border-box;}
+.newsCom .fCom .item .itL .txt p{ font-size: 0.28rem; line-height: 0.38rem;}
+.newsCom .fCom .item .itL .bot{ position: absolute; bottom:0.15rem; left: 0.15rem;}
+.newsCom .fCom .item .itL .bot .label{ color: #1f89e3;}
+.newsCom .fCom .item .itL .bot .date{ color: #999; display: inline-block; margin-left: 0.2rem;}
+.newsCom .fCom .item .itR{ width: 30%; margin-top: 0.05rem;}
+.newsCom .fCom .item .itR .tp{ width: 1.7rem; height: 1.16rem; overflow: hidden;}
+.newsCom .fCom .item .itR .tp img{ width: 100%; display: block;}
+.newsCom .fCom2 .hd{ width: 100%; line-height: 0.5rem;}
+.newsCom .fCom2 .hd em{ color: #1f89e3; font-size: 0.2rem; margin-right: 0.2rem; vertical-align: top;}
+.newsCom .fCom2 .hd p{ display: inline-block; font-size: 0.28rem;}
+.newsCom .fCom2 .pic{ width: 100%; overflow: hidden; margin-top: .1rem;}
+.newsCom .fCom2 .pic img{ width: 100%;}
+
+/*newsDet.html*/
+.newsDet{ position: relative; width: 100%; height: 0.8rem;}
+.newsDet .in{ position: fixed; top: 0; z-index: 88; width: 100%; height: 0.8rem; background-color: #1f89e3; max-width: 640px; min-width: 320px; margin: 0 auto; }
+.newsDet h3{ line-height: 0.8rem; color: #fff; font-size: 0.32rem; text-align: center;}
+.newsDet .back{ width: 0.8rem; height: 0.8rem; position: absolute; top:0; left: 0; background: url("../images/img-oth/back.png") no-repeat; background-size: cover;}
+.pageCom .in{ padding: 0.2rem; background-color: #fff;}
+.pageCom .tit em{ color: #fff; padding: 0.05rem 0.08rem; background-color: #fe2e2e; border-radius: 0.06rem; margin-right: 0.1rem; vertical-align: text-top;}
+.pageCom .tit h4{ font-size: 0.32rem; line-height: 0.44rem; display: inline;}
+.timeFun{ overflow: hidden; margin-top: 0.13rem;}
+.timeFun .date{ color: #999; font-size: 0.24rem; margin-top: 0.12rem;}
+.timeFun .label{ color: #1f89e3; border: 1px solid #1f89e3; padding: 0.1rem 0.15rem; border-radius: 0.1rem;}
+.mid{ padding-top: 0.4rem;}
+.mid p{ font-size: 0.3rem; line-height: 0.48rem; text-indent: 2em;}
+.mid .tp{ width: 100%; overflow: hidden; padding: 0.1rem 0;}
+.mid .tp img{ width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

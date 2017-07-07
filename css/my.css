@@ -1,0 +1,339 @@
+/*addressNo.html*/
+.addressNo .in{ text-align: center; padding: 0.7rem 0;}
+.addressNo .pic{ width: 2rem; height: 2rem; overflow: hidden; margin:0 auto;}
+.addressNo .pic img{ width: 100%;}
+.addressNo .tip{ font-size: 0.28rem; color: #999; margin-top: 0.3rem;}
+.addressNo .addIn{ margin-top: 0.6rem; }
+.addressNo .addIn .newDz{ width: 76%;}
+
+/*.address.html*/
+.comHd .addIco{ width: 0.5rem; height: 0.7rem; background: url("../images/img-pro/addico.png") no-repeat; background-size: contain; position: absolute; top: 0; right:0.15rem;}
+.addList .hd{ height: 0.8rem; line-height: 0.8rem; padding:0 0.3rem; background-color: #fff; font-size: 0.28rem; color: #d5162a; border-bottom: 1px solid #ebebeb;}
+.addList ul{ overflow: hidden;}
+.addList ul li{ margin-bottom: 0.2rem;}
+.addList .delIco a{ width: 0.5rem; height: 0.5rem; background-image: url("../images/img-pro/delIco.png");}
+.addList .def{  width: 1rem;  line-height: 0.32rem;  text-align: center; font-size: 0.2rem; border:1px solid #d5162a; color: #d5162a; border-radius: 0.06rem; position: absolute; right: 0.2rem; bottom: 0.1rem;}
+
+/*addressEdit.html*/
+.addCom .inp{ width: 100%; height: 0.9rem; line-height: 0.9rem; background-color: #fff; margin-top: 0.1rem; position: relative;}
+.addCom .inp .ti{ font-size: 0.28rem; width: 30%; padding-left: 0.25rem; box-sizing: border-box; display: inline-block; float: left;}
+.addCom .inp input{ line-height: 0.9rem; font-size: 0.3rem; width: 65%; box-sizing: border-box;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; }
+.addCom .inp i{ width: 0.14rem; height: 0.24rem; background: url("../images/img-pro/jt.png") no-repeat; background-size: cover; right: 0.2rem;}
+.addCom .inp2{ margin-top: 1px;}
+.addCom .inp2 textarea{ width: 100%; height: 1rem; padding: 0.2rem; box-sizing: border-box; font-size: 0.3rem; background-color: #fff; }
+.addCom .setDef{ margin-top: 0.4rem; padding: 0 0.25rem;}
+.addCom .setDef i{ width: 0.26rem; height: 0.3rem; background: url("../images/img-my/cchh.png") no-repeat left top; background-size: cover; display: inline-block; margin-right: 0.1rem; vertical-align: middle;}
+.addCom .setDef.cur i{ background-position: right top;}
+.addCom .setDef span{ font-size: 0.26rem; vertical-align: middle;}
+.btnCom{ margin: 0 0.3rem; height: 0.9rem; line-height: 0.9rem; text-align: center; margin-top: 0.5rem; border-radius: 0.08rem; background-color: #d5162a;  }
+.btnCom a{color: #fff; font-size: 0.34rem; display: block; }
+.dqld_div{ position: fixed;/* left: 0; *//* left: 0; */top:0; width: 100%; height: 100%; z-index: 99; background-color: #fff; overflow: auto; max-width: 640px; min-width: 320px;}
+.dqld_div ul li{ font-size: 0.28rem; line-height: 0.8rem; padding: 0 4%; border-bottom: 1px solid #ebebeb;}
+.dqld_div .back{ width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #d5162a; display: block; position: relative; }
+.dqld_div .back i{ width: 0.5rem; height: 0.8rem; background: url("../images/img-pro/backIco.png") no-repeat 0 0 ; background-size: cover; margin-left: 0.1rem; display: inline-block;}
+
+/*my.html*/
+.myDet .in{ width: 100%;height: 2.1rem; background: url("../images/img-my/myBg.png") no-repeat center top;  background-size: cover;overflow: hidden; box-sizing: border-box; padding: 0.3rem; padding-bottom: 0; position: relative; }
+.myDet .tp{ width: 1rem; height: 1rem; border-radius: 50%; border: 2px solid #fff; position: relative; float: left; margin-top: 0.25rem; }
+.myDet .tp img{  width: 1rem; height: 1rem;  border-radius: 50%; display: block;}
+.myDet .txt{ margin-left: 1.2rem; color: #fff; margin-top: 0.3rem; margin-right: 1.7rem;}
+.myDet .txt h2{ color: #fff; font-size: 0.3rem;}
+.myDet .txt p{ font-size: 0.2rem; line-height: 0.36rem;}
+.myDet .apply{ position: absolute; right: 0.3rem;  font-size: 0.3rem; color: #fff; padding: 0.15rem;border: 1px solid #fff; border-radius: 0.1rem;}
+.myCom ul{ margin-top: 0.2rem;}
+.myCom ul li{ width: 100%; padding:0 0.35rem; line-height: 0.9rem; height: 0.9rem; box-sizing: border-box; background-color: #fff; border: 1px solid #ebebeb;}
+.myCom ul li a{ display: block; font-size: 0.3rem;}
+.myCom li img{ width: 0.5rem; height: 0.5rem; overflow: hidden;}
+.myCom li span{ vertical-align: middle;}
+.myDetVip .tp{ border-color: #ffcf73; position: relative;}
+.myDetVip .tp .lab{ position: absolute; bottom:-0.1rem; padding:0.05rem 0.06rem;background-color: #ffcf73; border-radius: 0.14rem; color: #400e0e; font-size: 0.15rem; }
+.myDetVip .txt{ margin-right: 0.2rem;}
+
+/*myOrder.html*/
+.myOrd{ position: relative; width: 100%; height: 0.8rem;}
+.myOrd .in{ position: fixed; top:0; z-index: 88; width: 100%; height: 0.8rem; background-color: #fff;;box-shadow: 0 2px 0.1rem #e6e6e6; max-width: 640px;  min-width: 320px; margin: 0 auto;}
+.myOrd ol{ display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.myOrd ol li{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1; text-align: center; }
+.myOrd ol li span{ font-size: 0.28rem; padding: 0 0.2rem; border-bottom: 2px solid transparent; display: inline-block; line-height: 0.78rem;}
+.myOrd ol li.have span{ position: relative;}
+.myOrd ol li.have span:after{ content: ""; width: 0.1rem; height: 0.1rem; border-radius: 50%; background-color: #d5162a; position: absolute; right: 0.15rem; top: 0.2rem;}
+.myOrd ol li.cur span{ border-color:#d5162a; color: #d5162a; }
+.ordList .proDd{ margin-top: 0.1rem;}
+.ordList li{ margin-bottom: 0.1rem;}
+.ordList .money{ line-height: 0.8rem; text-align: right; font-size: 0.28rem; border-top: 1px solid #ebebeb;}
+.ordList .money .price{ font-size: 0.3rem; color: #d5162a; margin-left: 0.1rem;}
+.ordList .bot{ height: 0.6rem;padding: 0.1rem 0;}
+.ordList .bot .ti{ font-size: 0.26rem; margin-top: 0.1rem;}
+.ordList .dfk .bot .ti{ color: #d5162a;}
+.ordList .dfh .bot .ti{ color: #ff2c00;}
+.ordList .dsh .bot .ti{ color: #fe8f45;}
+.ordList .han a{ width: 1.6rem; line-height: 0.6rem; font-size: 0.28rem; text-align: center; margin-left: 0.15rem; display: block; float: left; border: 1px solid #999; box-sizing: border-box;}
+.ordList .han a.shBtn{ border-color: #d5162a; color: #fff; background-color: #d5162a;}
+.ordList .han a.payBtn{ border-color: #d5162a; color: #d5162a;}
+.ordList .han a.pjBtn{ border-color: #d5162a; background-color: #d5162a; color: #fff;}
+.ordList .han a.ypjBtn{ background-color: #ccc; color: #fff; border-color: #ccc;}
+.ordList .han a.txBtn{ background-color: #ff2c00; color: #fff; border-color:#ff2c00; }
+
+/*myOrderNp.html*/
+.orderNo .in{ text-align: center; padding: 0.7rem 0;}
+.orderNo .pic{ width: 2rem; height: 2rem; overflow: hidden; margin:0 auto;}
+.orderNo .pic img{ width: 100%;}
+.orderNo .tip{ font-size: 0.28rem; color: #999; margin-top: 0.3rem;}
+
+/*ordDetDsh.html*/
+.ordDet .itemCom{ margin-bottom: 0.1rem;}
+.ordDet .itemCom .hd{ width: 100%; height: 0.8rem; line-height: 0.8rem; padding: 0 0.3rem; background-color: #fff; font-size: 0.28rem; color: #666; border:1px solid #ebebeb; box-sizing: border-box;}
+.ordDet .itemCom .hd:before{ content: ""; width: 0.4rem; height: 0.8rem; background: url("../images/img-my/de01.png") no-repeat; background-size:cover; display: inline-block; vertical-align: bottom; margin-right: 0.2rem; }
+.ordDet .item02 .hd:before{ background-image: url("../images/img-my/de02.png");}
+.ordDet .item03 .hd:before{ background-image: url("../images/img-my/de03.png");}
+.ordDet .itemCom .inf{ background-color: #fff; padding: 0.3rem;font-size: 0.28rem; }
+.ordDet .itemCom .dd{ overflow: hidden;}
+.ordDet .itemCom .dd .tel{ margin-right: 1.5rem;}
+.ordDet .itemCom p{ margin-top: 0.2rem; overflow: hidden; line-height: 0.4rem;}
+.ordDet .itemCom ul li{ line-height: 0.6rem; font-size: 0.26rem; box-sizing: border-box; overflow: hidden;}
+.ordDet .item02 li .ti{ width: 20%; display: inline-block; color: #999;float: left;}
+.ordDet .item02 li .tr{ width: 80%; display: inline-block; float: left; padding-left: 0.4rem; box-sizing: border-box;}
+.ordDet .item02 li p.tr{ margin-top: 0.12rem;}
+.ordDet .itemCom li.sta .tr{ color:#d5162a;}
+.ordDet .itemCom .proDd{ margin-top: 0;}
+.ordDet .proDd ul li{ padding-bottom: 0; margin-bottom: 1px;}
+.ordDet .btn{ margin: 0.6rem 0.2rem; height: 0.9rem; line-height: 0.9rem; background-color: #d5162a;  text-align: center; border-radius: 0.1rem;}
+.ordDet .btn a{ color: #fff; font-size: 0.34rem; display: block;}
+.ordDet .btn2{ background-color: #96979b;}
+
+/*orderConfirm.html*/
+.addIn .in{ padding: 0.1rem;}
+.newDz{ width: 80%; height: 0.8rem; line-height: 0.8rem; text-align: center; border-radius: 0.14rem; border: 1px dashed #999; margin: 0 auto; margin-top: 0.2rem;}
+.newDz a{ display: block; font-size: 0.3rem; color: #fc0822;}
+.newDz a span:before{ content: ""; background: url("../images/img-my/jia.png") no-repeat;background-size: cover; width: 0.35rem; height: 0.35rem; vertical-align: sub; display: inline-block; margin-right: 0.1rem; }
+.addDef{ position: relative;}
+.addDef .in{ padding:0.35rem 0.25rem; background-color: #fff; display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.addDef .posIco{  -webkit-box-flex: 0!important;  -webkit-flex: none!important;  -ms-flex: none!important;  flex: none!important;  width: auto;  }
+.addDef .posIco a{ background: url("../images/img-pro/pos.png") no-repeat; width: 0.42rem; height: 0.62rem; background-size: cover; display: block;}
+.addDef .inf{ -webkit-box-flex: 1; -webkit-flex: 1;  -ms-flex: 1;  flex: 1;  width: 0;  -webkit-flex-basis: 0;  -ms-flex-preferred-size: 0;  flex-basis: 0;  max-width: 100%;  display: block;  padding: 0!important;position: relative; margin-right: 0.4rem; margin-left: 0.7rem; font-size: 0.3rem; }
+.addDef .inf a{ display: block;overflow: hidden; }
+.addDef .inf .dz{ font-size: 0.26rem; line-height: 0.42rem; margin-top: 0.2rem;}
+.addDef .jt{    -webkit-box-flex: 0!important;  -webkit-flex: none!important;  -ms-flex: none!important;  flex: none!important;  width: auto;}
+.addDef .jt i{ background: url("../images/img-pro/jt.png") no-repeat; width: 0.14rem; height: 0.24rem; background-size: cover; display: inline-block; right: 0.2rem; }
+.proDd{ margin-top: 0.2rem;}
+.proDd .hd{ padding: 0 0.2rem; line-height: 0.8rem; height: 0.8rem; font-size: 0.24rem;background-color: #fff;}
+.proDd .hd em{ padding: 0 0.15rem; font-size: 0.34rem; color: #d5162a;vertical-align: bottom;}
+.proDd ul{ overflow: hidden;}
+.proDd ul li{ border-top: 1px solid #ebebeb;background-color: #fff;}
+.proDd ul li{ padding: 0.2rem;}
+.proDd .item{ overflow: hidden;}
+.proDd .tp{ width: 2.1rem; height: 2.1rem; overflow: hidden; position: relative; float: left;}
+.proDd .tp img{ width: 100%;}
+.proDd .txt{ margin-left: 2.3rem; margin-top: 0.1rem;}
+.proDd .txt .ti{ font-size: 0.28rem; line-height: 0.4rem;}
+.proDd .txt .type{ font-size: 0.24rem; line-height: 0.3rem; color: #999; margin-top: 0.1rem;}
+.proDd .txt .bot{ margin-top: 0.3rem; overflow: hidden;}
+.proDd .txt .bot .nu{ color: #999; font-size: 0.22rem;}
+.proDd .txt .bot .pri{ font-size: 0.28rem; color: #d5162a;}
+.proDd .sty{ height: 0.8rem; line-height: 0.8rem; font-size: 0.28rem; padding: 0 0.3rem; background-color: #fff; margin-top: 0.2rem;}
+.proDd .sty em{ color: #d5162a; padding-left: 0.1rem;}
+.proDd .btn{ width: 100%; height: 0.8rem;margin-top: 0.4rem; position: relative;}
+.proDd .btn a{ width: 100%; height: 0.8rem; line-height: 0.8rem; font-size: 0.3rem; color: #fff; position: fixed; bottom: 0; z-index: 77; background-color: #d5162a; text-align: center;display: block; box-shadow: 0 0 0.1rem #696969; max-width: 640px; min-width: 320px; margin: 0 auto;}
+.proDd .btn a em{ padding-left: 0.1rem;}
+
+/*payment.html*/
+.payment .com{ background-color: #fff; margin-top: 0.1rem;}
+.payment h3{  height: 0.8rem;line-height: 0.8rem;  padding: 0 0.3rem; font-size: 0.3rem; border-bottom: 1px solid #ebebeb;}
+.payment .list{ margin: 0 0.15rem; background-color: #fffae0;}
+.payment .list li{ height: 0.6rem;line-height: 0.6rem; color: #999; font-size: 0.26rem; padding: 0 0.1rem; border-bottom: 1px dashed #e0e0e0;}
+.payment .list li:last-of-type{ border-bottom: none;}
+.payment .list li p{ width:75%; line-height: 0.6rem;  float: left; overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;}
+.payment .list li .pri{ color: #666; width: 25%; text-align: right; float: right;}
+.payment .count{ padding: 0 0.2rem; height: 0.9rem; line-height: 0.9rem; font-size: 0.26rem; text-align: right;}
+.payment .count .money{ color: #d5162a; font-size: 0.32rem; margin-left: 0.1rem;}
+.payment .type li{ height: 0.8rem; line-height: 0.8rem; margin: 0 0.3rem; border-bottom: 1px solid #ebebeb; position: relative;}
+.payment .type li:nth-of-type{ border-bottom: none;}
+.payment .type .tp{ width: 0.6rem; height: 0.6rem; display: inline-block; overflow: hidden; vertical-align: middle;}
+.payment .type .tp img{ width: 100%; display: block;}
+.payment .type .tx{  font-size: 0.28rem; vertical-align: middle; margin-left: 0.1rem;}
+.payment .type .che{ width: 0.26rem; height: 0.3rem; background: url("../images/img-pro/cheche.png") no-repeat left top; background-size: cover; display: inline-block; right: 0.1rem;}
+.payment .type .che.cur{ background-position: right top;}
+.payment .btn{ position: relative; height: 0.9rem;}
+.payment .btn a{ width: 100%; height: 0.9rem; line-height: 0.9rem; background-color: #d5162a; text-align: center; color: #fff; font-size: 0.3rem; position: fixed; bottom:0; z-index: 22; max-width: 640px; min-width: 320px; margin: 0 auto;}
+
+
+/*paySuccess.html*/
+.paySuc .in{ text-align: center; padding: 0.65rem 0.2rem;}
+.paySuc .pic{ width:1.5rem; height: 1.5rem; overflow: hidden; margin:0 auto;}
+.paySuc .pic img{ width: 100%;}
+.paySuc .tip{ font-size: 0.36rem; margin-top: 0.3rem; margin-bottom: 0.65rem;}
+.paySuc .txt{ padding:  0.3rem 0; border-top: 1px solid #ebebeb;text-align: left; margin-bottom: 0.3rem;}
+.paySuc .txt h4{ font-size: 0.3rem;}
+.paySuc .txt p{ font-size: 0.26rem; line-height: 0.38rem; margin-top: 0.2rem; }
+.paySuc .btn{ width: 100%; height: 0.8rem; line-height: 0.8rem; text-align: center; font-size: 0.34rem; border: 1px solid #d5162a; border-radius: 0.1rem; margin-bottom: 0.2rem;}
+.paySuc .btn2{ border-color: #999;}
+.paySuc .btn a{ display: block;color: #d5162a; }
+.paySuc .btn2 a{ color: #999; }
+
+/*chgPwd.html*/
+.chgPwd{ margin-top: 0.2rem;}
+.chgPwd .inpCom{ background-color: #fff;}
+.chgPwd .inpCom .inp{ line-height: 0.9rem; height: 0.9rem; border-bottom: 1px solid #ebebeb; }
+.chgPwd .inp .ti{ width: 30%; display: inline-block; color: #d5162a; font-size: 0.3rem; text-align: center; float: left;}
+.chgPwd .inp input{ width: 70%; height: 0.9rem; line-height: 0.9rem; padding: 0 0.2rem;font-size: 0.3rem; box-sizing: border-box; float: left; }
+.chgPwd .inp.yzm input{ width: 40%; }
+.chgPwd .inp button{ width: 30%; height: 0.9rem; font-size: 0.3rem; color: #fff; float: left; background-color: #1e96d8;}
+
+/*perData.html*/
+.perData .inpCom{ background-color: #fff; margin-top: 0.2rem;}
+.perData .inp{ height: 0.9rem; border-bottom: 1px solid #ebebeb; }
+.perData .inp .ti{ width:30%; padding-left: 0.35rem; box-sizing: border-box; line-height: 0.9rem; display: inline-block; font-size: 0.3rem; color: #999; float: left; }
+.perData .inp .tr{ width: 70%; font-size: 0.3rem; padding: 0 0.2rem; box-sizing: border-box; float: left; }
+.perData .inp .tr input{ width: 100%; height: 0.9rem; line-height: 0.9rem;box-sizing: border-box; font-size: 0.3rem;  overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;}
+.perData .inp .tr a{ font-size: 0.3rem; color: #d5162a;line-height: 0.9rem;}
+.perData .inp .tr textarea{ width: 100% ;padding:0.2rem 0 0.1rem; box-sizing: border-box; font-size: 0.3rem;}
+.perData .inp2{ height: 1.25rem;}
+.perData .inp3{ height: 1.5rem;}
+.perData .inp3 .ti{line-height: 1.5rem;}
+.perData .inp3 .tp{ float: right; width: 1.1rem; height: 1.1rem; border-radius: 50%; overflow: hidden; margin-top: 0.2rem;}
+.perData .inp3 .tp img{ width: 100%; display: block;}
+.perData .upBtn{ padding: 0 0.05rem; margin-top: 0.6rem; color:#d5162a;  font-size: 0.3rem; display: inline-block; float: left; position: relative; }
+.perData .upBtn input{ opacity: 0; position: absolute; left: 0; top: 0;  width: 100%; height: 100%; font-size: 0.3rem;}
+
+/*perDataVip.html*/
+.perData .inp .tr{ position: relative;}
+.perData .inp .tr i{  width: 0.14rem;  height: 0.24rem;  background: url("../images/img-pro/jt.png") no-repeat;  background-size: cover;  right: 0.2rem;  }
+.perData .inp .tr .address_input1{ padding-right: 0.2rem;  overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;}
+.perData .inp4{ height: auto; min-height: 0.9rem;}
+.perData .inp4 textarea{ font-size: 0.3rem; padding: 0.2rem 0.3rem; width: 100%; box-sizing: border-box;}
+.perData .inp5{ height:auto; min-height: 0.9rem; overflow: hidden; border-top: 1px solid #ebebeb;}
+.perData .inp5 .upBtn{ margin-top: 0.32rem;}
+.perData .inp5 ul{ float: left;  padding-left: 30%;}
+.perData .inp5 ul .pic{ width:26%; position: relative; float: left;margin-right: 0.3rem; margin-bottom: 0.2rem;}
+.perData .inp5 ul .pic:nth-of-type(3n){ margin-right: 0;}
+.perData .inp5 ul .pic .tp{ width:100%; height: 1rem; overflow: hidden; display: inline-block; }
+.perData .inp5 ul .pic img{ width: 100%; height: 100%;}
+.perData .inp5 ul .del{ width: 0.3rem; height: 0.3rem; line-height: 0.3rem; text-align: center; color: #fff; font-size: 0.2rem;border-radius: 50%; background-color: #000; position: absolute; right: -0.12rem; top: -0.12rem; }
+.perData .inp6 .tr{ padding-right: 0.4rem;}
+.brandPop{ position: fixed;  top: 0; z-index: 100; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); max-width: 640px; min-width: 320px; display: none;}
+.brandPop .in{ width: 87.5%; height: 65%; border-radius: 0.1rem; background-color: #fff; text-align: center;  box-shadow: 0 0 0.1rem #dedede;}
+.brandPop .tit{ font-size: 0.34rem; line-height: 0.7rem; color: #b90014;border-bottom: 1px solid #ebebeb;}
+.brandPop ul{ height: 90%; overflow: auto;}
+.brandPop ul li{ font-size: 0.3rem; line-height: 0.68rem;}
+.brandPop ul li.cur{ color: #d5162a; position: relative;}
+.brandPop ul li.cur:after{ content: ""; width:0.3rem; height: 0.68rem; background: url("../images/img-my/ppCc.png") no-repeat; background-size: cover; position: absolute; right: 0.4rem  }
+.brandPop .close{ width: 0.5rem; height: 0.5rem; display:inline-block; font-size: 0.6rem; position: absolute; right: 0; top: 0;}
+
+/*myFx.html*/
+.myFx .in{ width: 100%;height: 3.78rem; background: url("../images/img-my/myFxBg.png") no-repeat center top;  background-size: cover;overflow: hidden; box-sizing: border-box; color: #fff; position: relative; }
+.myFx .tit{ font-size: 0.26rem; margin-top: 0.25rem;  margin-left: 0.3rem;}
+.myFx .tip:before{ content: ""; width: 0.5rem; height: 0.5rem; background: url("../images/img-my/txIco.png") no-repeat; background-size: cover; vertical-align: middle; margin-right: 0.1rem; display: inline-block;}
+.myFx .money{ font-size: 0.9rem; top: 45%;}
+.myFx .bot{ width: 100%; height: 1rem; background-color: rgba(109,68,60,0.08); position: absolute; bottom: 0;}
+.myFx .bot .item{ width: 50%; float: left; box-sizing: border-box; text-align: center; margin-top: 0.18rem;}
+.myFx .bot .item em{ font-size: 0.36rem;}
+.myFx .bot .item p{ font-size: 0.22rem; margin-top: 0.08rem;}
+.myFx .bot .item:first-of-type{ border-right: 1px solid #fff;}
+.myFx ul{ overflow: hidden;}
+.myFx ul li{ width: 100%; height: 0.9rem; line-height: 0.9rem; background-color: #fff; padding: 0 0.3rem ; font-size: 0.3rem; border-bottom: 1px solid #ebebeb; box-sizing: border-box; position: relative;}
+.myFx ul li:after{ content:""; width: 0.14rem;  height: 0.24rem;  background: url("../images/img-pro/jt.png") no-repeat;  background-size: cover; position: absolute;  right: 0.3rem; top: 0.33rem; }
+.myFx ul li a{ display: block;}
+.myFx .btnCom{ background-color: #ff8636; margin-top: 0.4rem; }
+.myFx .tip{ font-size: 0.22rem; color: #666; text-align: center;  margin-top: 0.05rem; }
+
+/*withdraw.html*/
+.withdraw .in{ padding: 0.5rem 0.35rem 0; background-color: #fff; text-align: center;}
+.withdraw .tp{ width: 1.6rem; height: 1.6rem; overflow: hidden; margin:0 auto;}
+.withdraw .tp img{ width: 100%; display: block;}
+.withdraw .ti{ font-size: 0.3rem; margin-top: 0.1rem;}
+.withdraw .inp{ margin-top: 0.5rem; }
+.withdraw .inp input{ width: 100%; height: 0.8rem; line-height: 0.8rem; font-size: 0.26rem; text-align: center; border-bottom: 1px solid #e8e8e8;}
+.withdraw .btnCom{ margin-top: 1rem;}
+.withdraw .tip{ font-size: 0.22rem; color: #666; text-align: center;   margin-top: 0.15rem; }
+
+/*withdrawSuc.html*/
+.withdrawSuc ul{ overflow: hidden; font-size: 0.26rem;padding: 0.1rem 0; box-sizing: border-box; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; margin-top: 0.7rem;}
+.withdrawSuc li{ height: 0.6rem; line-height: 0.6rem; }
+.withdrawSuc li span{ color: #999;}
+.withdrawSuc .btnCom{ background-color: #fff;  border:1px solid #d5162a; box-sizing: border-box; margin-top: 0.5rem;}
+.withdrawSuc .btnCom a{ color: #d5162a;}
+
+/*withdrawDet.html*/
+.withdrawDet .in{ background-color: #fff;}
+.withdrawDet ul{ overflow: hidden;}
+.withdrawDet ul li{ height: 1.1rem; line-height: 1.1rem;font-size: 0.26rem; padding: 0 0.4rem; border-bottom: 1px solid #ebebeb; box-sizing: border-box;}
+.withdrawDet .tr{ color: #d5162a;}
+
+/*broerageDet.html*/
+.broerageDet .hd{ position:relative; width: 100%; height: 0.6rem;}
+.broerageDet .hd ol{ position: fixed; top: 0.8rem;  width: 100%;  height: 0.6rem; line-height: 0.6rem; font-size: 0.26rem; color: #999; background-color: #fff; box-shadow: 0 2px 0.1rem #e0e0e0;max-width: 640px; min-width: 320px; margin: 0 auto;}
+.broerageDet li{ text-align: center; float: left; width: 33.3%;  overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;}
+.broerageDet .bd{ margin-top: 0.1rem;}
+.broerageDet .bd ul{ overflow: hidden; font-size: 0.3rem; background-color: #fff;border-bottom: 1px solid #ebebeb; }
+.broerageDet .bd ul li{ height: 1.1rem; line-height: 1.1rem; }
+.broerageDet .bd ul .time{ color: #666; }
+.broerageDet .bd em{ color: #d5162a;}
+
+/*receipt.html*/
+.receipt .txt p span{ color: #1f89e3;}
+.receipt .btn1 a{ color: #fff;}
+
+/*evaluate.html*/
+.evaluate .evaIn{ margin-bottom: 0.2rem;}
+.evaluate .hd{ padding: 0.25rem; background-color: #fff; overflow: hidden;}
+.evaluate .pic{ width: 1.2rem; height: 1.2rem; border: 1px solid #ebebeb; overflow: hidden; box-sizing: border-box; position: relative; float: left;}
+.evaluate .pic a{ display: block;}
+.evaluate .pic a img{ width: 100%;}
+.evaluate .text{ margin-left: 1.5rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+.evaluate .text textarea{ font-size: 0.28rem; width: 100%; height: 2.1rem; line-height: 0.36rem; color: #333;}
+.evaluate .limit{ font-size: 0.24rem; color: #999; float: right; }
+.evaluate .stars{ height: 1.1rem; line-height: 1.1rem; padding: 0 0.25rem; background-color: #fff; margin-top: 1px; font-size: 0.28rem;}
+.evaluate .stars ul{ overflow: hidden; display: inline-block;  vertical-align: sub; margin-left: 0.7rem;}
+.evaluate .stars ul li{ float: left; width: 0.42rem; height: 0.4rem; background: url("../images/img-my/star.png") no-repeat; background-size: cover; margin-right: 0.1rem;}
+.evaluate .stars ul li.hover{ background-position: right top;}
+.evaluate .stars .score{ color: #d22485; margin-right: 0.2rem;}
+.evaluate .anony{ text-align: right;text-align: right;  padding: 0 0.25rem;}
+.evaluate .anony label{vertical-align: middle;  color: #999;font-size: 0.24rem; margin-left: 0.15rem; }
+.evaluate .anony input{ width: 0.28rem; height: 0.28rem; border: 1px solid #ccc; vertical-align: middle; -webkit-appearance: checkbox; }
+.evaluate .sub{ margin-top: 0.3rem;}
+.evaluate .sub button{ width: 100%; height: 0.88rem; background-color: #d5162a; color: #fff; font-size: 0.32rem; display: block;}
+
+/*evaluateSuc.html*/
+.evaSuc .in{ padding: 0.25rem 0.25rem 0.5rem 0.25rem; background-color: #fff;}
+.evaSuc .pic{ width: 1.4rem; height: 1.4rem; border: 1px solid #ebebeb; overflow: hidden; position: relative; float: left;}
+.evaSuc .pic a{ display: block;}
+.evaSuc .pic img{ width: 100%;}
+.evaSuc .txt{ margin-left: 1.8rem;}
+.evaSuc .stars{ margin-top: 0.1rem;}
+.evaSuc .stars ul{ overflow: hidden;}
+.evaSuc .stars ul li{ float: left; width: 0.7rem; height: 0.67rem; background: url("../images/img-my/star.png") no-repeat; background-size: cover; display: inline-block; margin-right: 0.1rem;}
+.evaSuc .stars ul li.hover{ background-position: right top;}
+.evaSuc .score{ display: block; font-size: 0.36rem; color: #000; margin-top: 0.2rem;}
+.evaSuc .remark{ font-size: 0.28rem; color: #2e2b2b; line-height: 0.36rem; margin-top: 0.25rem;}
+.evaSuc .time{ font-size: 0.2rem; color: #2e2b2b; margin-top: 0.25rem;}
+.backOrdDet{ width: 100%; height: 0.8rem; line-height: 0.8rem; background-color: #fff; margin-top: 0.2rem; text-align: center;}
+.backOrdDet a{ color: #d5162a ;font-size: 0.28rem;}
+.backOrdDet a:before{ content: ""; width: 0.32rem; height: 0.3rem; background: url("../images/img-my/jt.png") no-repeat; background-size: cover; display: inline-block; vertical-align: middle; margin-right: 0.15rem;}
+
+
+/*2016.12.13 add*/
+.ordDet2 .btn{ margin-top:.2rem; margin-bottom: .2rem; }
+.ordDet .btn3{ background-color: #999;}
+.ordDet .btn3 a{ color: #fff;}
+.thPop{ position: fixed; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.6); z-index: 99; max-width: 640px; min-width: 320px;}
+.thPop .in{ width: 90%; background-color: #fff; padding: .2rem; box-sizing: border-box; border-radius: .1rem;}
+.thPop .hdTit{ width: 100%; line-height: .5rem; font-size: .36rem; color: #000;}
+.thPop .ti{ font-size: .26rem;line-height: .4rem; margin-bottom: .1rem;}
+.thPop .tip{ font-size: .28rem; margin-top: .1rem;}
+.thPop .inp{ margin-top: .2rem;}
+.thPop .inp em{ color: #f00;}
+.thPop .inp input{ border: 1px solid #dbdbdb; width: 90%; height: .6rem; padding: .1rem; box-sizing: border-box;}
+.thPop textarea{ width: 100%; height: 2rem; padding: .1rem; box-sizing: border-box; border: 1px solid #dbdbdb; font-size: .24rem;}
+.upLoad{ overflow: hidden;}
+.upLoad .addPicBtn{ width:.8rem; height:.8rem; background:url(../images/img-my/picAddBtn.png) no-repeat; background-size: cover; display:inline-block; float:left; margin-right: .1rem; position:relative;}
+.upLoad .addPicBtn label,.upLoad .addPicBtn input{ width: 100%; height: 100%; position:absolute; left:0; top:0;}
+.upLoad .addPicBtn input{ opacity: 0;}
+.myTp{ float:left;}
+.myTp li{ width: .8rem; height: .8rem;float:left; position:relative; margin-right: .1rem; }
+.myTp li span.tp{ width:100%; height:100%; overflow:hidden; display:block; border:1px solid #e6e7e8;}
+.myTp li span.tp img{ width: 100%; height: 100%;}
+.myTp li i.del{ width:.2rem; height:.2rem; background:url(../images/img-my/delbtn.png) no-repeat; background-size: cover; position:absolute; right:-.1rem; top:-.1rem;}
+.thPop .btn{ margin-top: .2rem; float: right; overflow: hidden;}
+.thPop .btn button{ padding:.1rem .2rem; float: left; margin-right: .2rem; font-size: .26rem;}
+.thPop .btn button.keep{ background-color: #f00; color: #fff;}
+.thPop .btn button.cancle{ background-color: #cecece;}
